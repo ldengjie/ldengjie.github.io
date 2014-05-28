@@ -1,7 +1,7 @@
 ---
 layout: post
-title: blog title 
-description: Description of a article will be shown in index.html.
+title: First blog
+description: Why am I here?
 category: blog 
 ---
 I record the world,summarize learning, criticize and introspect myself here.
