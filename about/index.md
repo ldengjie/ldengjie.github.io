@@ -19,4 +19,5 @@ layout: home
             </li>
         {% endfor %}
         </ul>
+    </div>
 </div>
