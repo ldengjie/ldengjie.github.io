@@ -2,6 +2,13 @@
 layout: default
 ---
 
+<script language="javasvript" src="/css/headroom.min.js"></script>
+
+var myElement = document.querySelector("header");
+var headroom  = new Headroom(myElement);
+headroom.init(); 
+
+
 <link rel="stylesheet" href="/js/prettify/prettify.css" />
 <style type="text/css">
     body { background:#e8e8e8; }
