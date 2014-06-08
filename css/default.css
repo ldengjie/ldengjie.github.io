@@ -177,7 +177,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
     .index-content .artical-cate { width:85%; }
     .sidenav {display:none;}
     .entry {float:none;width:auto;background:transparent;padding:0;box-shadow:none;}
-    #content {width:85%;margin:100px auto 50px; }
+    #content {width:85%;margin:30px auto 50px; }
 }
 @media (max-width: 1300px){
     .home-menu { position:absolute; }
