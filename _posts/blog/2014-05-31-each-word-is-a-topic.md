@@ -16,7 +16,9 @@ $w_1$为主题词时，w_1出现3次，需要记录其他词在这三次出现�
 w_2 -1,2,-1
 w_3 -2,1,-2
 
-[code](https://github.com/ldengjie/TopicDetecter)
+
+
+[code is here](https://github.com/ldengjie/TopicDetecter)
 
 
 
