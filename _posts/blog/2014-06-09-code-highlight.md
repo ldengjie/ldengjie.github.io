@@ -7,10 +7,10 @@ category: blog
 
 1. [下载](https://code.google.com/p/google-code-prettify/) prettify.js和prettify.css,放到网站特定文件加下`/js/prettify/`
 2. 在.html中加入, 考虑到加载速度，最好js写到文档末尾，body闭合标签之前，css写到头部
-```
+`
     <link href="/js/prettify/prettify.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="/js/prettify/prettify.js"></script>
-```
+`
 3. 调用，可以写在body的onload事件中，但是不建议，这里用jquery，在DOM节点加载完之后就调用
     <script type="text/javascript">
     //hihtlight
