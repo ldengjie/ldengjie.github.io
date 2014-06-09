@@ -5,7 +5,7 @@ description: 使用prettify实现代码高亮，jQuery加入行号、修正Html�
 category: blog 
 ---
 
-示例：
+示例：c++
 
 	#include  <iostream>
 	using namespace std;
@@ -14,11 +14,12 @@ category: blog
 	    cout<<"hello word! "<<endl;
 	}
 	
-<pre class="prettyprint linenums">
-    #include  <iostream>
-    using namespace std;
-    int main(int argc, char *argv[])
+java
+
+    public class HelloWord
     {
-        cout<<"hello word! "<<endl;
+        public static void main(String[] args)
+        {   
+            System.out.println("Ni hao!");
+        }      
     }
-</pre>
