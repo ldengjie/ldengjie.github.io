@@ -1,7 +1,7 @@
 ---
 layout: post
 title: where is my new blog? 
-description:a bug?
+description: a bug?
 category: blog 
 ---
 
