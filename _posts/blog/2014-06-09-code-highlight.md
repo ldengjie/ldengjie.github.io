@@ -21,4 +21,4 @@ int main(int argc, char *argv[])
 {
     cout<<"hello word! "<<endl;
 }
-<pre>
+</pre>
