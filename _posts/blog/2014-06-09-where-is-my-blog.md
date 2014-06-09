@@ -1,7 +1,7 @@
 ---
 layout: post
 title: where is my new blog? 
-description: a bug?中文编码确保为utf-8;冒号之后带空格
+description: 中文编码确保为utf-8;冒号之后带空格
 category: blog 
 ---
 
