@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git push 
-description:除了ssh key，还需检查协议类型，确保为git协议 
+description: 除了ssh key，还需检查协议类型，确保为git协议 
 category: blog 
 ---
 
