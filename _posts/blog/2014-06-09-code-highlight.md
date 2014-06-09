@@ -14,7 +14,7 @@ category: blog
 	    cout<<"hello word! "<<endl;
 	}
 	
-<pre class="prettyprint">
+<pre class="prettyprint linenums">
     #include  <iostream>
     using namespace std;
     int main(int argc, char *argv[])
