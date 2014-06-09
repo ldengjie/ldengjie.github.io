@@ -17,7 +17,6 @@ category: blog
 3.调用，可以写在body的onload事件中，但是不建议，这里用jquery，在DOM节点加载完之后就调用
 
     <script type="text/javascript">
-    //hihtlight
     $(window).load(function () {
             prettyPrint();
             })
