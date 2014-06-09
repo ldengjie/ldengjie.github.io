@@ -75,6 +75,7 @@ java
     ol.linenums{margin-top:0;margin-bottom:0} 修改前
     ol.linenums{padding:5px;margin-top:0;margin-bottom:0} 修改后
 
+7.prettify.js **一定**要放在jquery-2.1.1.min.js之后，且jquery-2.1.1.min.js**一定**要在/head之前!!!
 
 参考资料：
 
