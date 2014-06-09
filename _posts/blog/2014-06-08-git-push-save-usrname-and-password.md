@@ -1,9 +1,12 @@
 ---
 layout: post
-title: git push 不用每次输入账户密码
+title: git push save username and password
 description:除了ssh key，还需检查协议类型，确保为git协议 
 category: blog 
 ---
+
+ git push 不用每次输入账户密码
+除了ssh key，还需检查协议类型，确保为git协议 
 
 配置上传了ssh key 到 github,还是每次git push都需要输入帐号密码。
 
