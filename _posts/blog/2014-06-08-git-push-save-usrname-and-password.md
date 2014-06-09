@@ -20,7 +20,7 @@ git协议才用到ssh key。
 这样就行了。
 
     $ git remote -v
-    origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch)
+    origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch) origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch) origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch)
     origin  git@github.com:ldengjie/ldengjie.github.io.git (push)
 
 
