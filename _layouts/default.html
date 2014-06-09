@@ -22,6 +22,12 @@
 
 <!--highlight-->
 <link href="/js/prettify/prettify.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(window).load(function () {
+        $("pre").addClass("prettyprint linenums");
+        prettyPrint();
+        })
+</script>
 
 
 </head>
@@ -41,11 +47,6 @@
 
 <!--highlight-->
 <script type="text/javascript" src="/js/prettify/prettify.js"></script>
-<script type="text/javascript">
-$(window).load(function () {
-        prettyPrint();
-        })
-</script>
 
     {{ content }}
 
