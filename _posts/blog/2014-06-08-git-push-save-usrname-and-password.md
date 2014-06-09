@@ -16,6 +16,7 @@ git协议才用到ssh key。
 
 >1. 删除本地repository
 >2. git clone git@github.com:ldengjie/ldengjie.github.io.git
+
 这样就行了。
 
     $ git remote -v
