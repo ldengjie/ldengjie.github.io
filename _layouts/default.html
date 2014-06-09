@@ -26,7 +26,16 @@
 <link href="/js/prettify/prettify.css" rel="stylesheet" type="text/css" media="all">
 
 </head>
-<body onload="prettyPrint()">
+<body>
+<!--<body onload="prettyPrint()">-->
+<script type="text/javascript">
+//hihtlight
+$(function() {
+          window.prettyPrint && prettyPrint();
+          $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
+          });
+
+</script>
 
 
 
@@ -54,12 +63,6 @@
 <script type="text/javascript">
 
 $(".navbar-fixed-top").headroom();
-//hihtlight
-$(function() {
-          window.prettyPrint && prettyPrint();
-          $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto');
-          });
-
 </script>
 
 
