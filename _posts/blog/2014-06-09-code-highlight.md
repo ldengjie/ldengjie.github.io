@@ -66,6 +66,8 @@ Tips:
 
     tar -xjf *.tar.bz2
 
+5.html代码不能放在markdown的列表里，且要和上下文用空行隔开，否则JekyII编译时会添加`li`标签，而不是`pre`标签，这样的话html code不会显示，而是会被执行
+
 参考资料：
 
 [Jekyll中使用google-code-prettify高亮代码](http://blog.evercoding.net/2013/02/27/highlight-code-with-google-code-prettify/)
