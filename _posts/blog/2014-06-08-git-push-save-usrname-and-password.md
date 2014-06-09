@@ -12,21 +12,19 @@ category: blog
 
 git协议才用到ssh key。
 
-step 1. 删除本地repository
-step 2. git clone git@github.com:ldengjie/ldengjie.github.io.git
+1. 删除本地repository
+2. git clone git@github.com:ldengjie/ldengjie.github.io.git
 
 这样就行了。
 
-`git remote -v`
+    $ git remote -v
+    origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch)
+    origin  git@github.com:ldengjie/ldengjie.github.io.git (push)
 
-origin  git@github.com:ldengjie/ldengjie.github.io.git (fetch)
-
-origin  git@github.com:ldengjie/ldengjie.github.io.git (push)
-
-
+`
 Tips:
 
 fatal: https://github.com/ldengjie/ldengjie.github.io/info/refs not found: did you run git update-server-info on the server?
 
 这个错误也随之解决了。
-
+`
