@@ -45,18 +45,25 @@ java
 Tips:
 
 1.步骤3的调用也可以如下,但资料说会拖延加载速度，不如先加载主要内容，再处理代码部分
+
     <body onload="prettyPrint()">
+
 2.步骤4,若网页是直接通过html代码编写，应该这样标记
+
     <pre class="prettyprint">
     // code here
     </pre>
+
 3.默认显示行号，不需要添加如下代码，跟jQuery([2.1.1](http://code.jquery.com/jquery-2.1.1.min.js)),prettify([7.x-1.0-beta1](http://ftp.drupal.org/files/projects/prettify-7.x-1.0-beta1.zip))更新版本有关？下载不了的话，可能是被墙了。
+
     <script type="text/javascript">
     $(window).load(function () {
             $("pre").addClass("prettyprint linenums");
             })
     </script>
+
 4.linux 解压tar.bz2
+
     tar -xjf *.tar.bz2
 
 参考资料：
