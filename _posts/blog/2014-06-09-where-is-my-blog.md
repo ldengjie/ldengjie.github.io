@@ -1,11 +1,10 @@
 ---
 layout: post
 title: where is my new blog? 
-description: a bug?
+description: a bug?中文编码确保为utf-8;冒号之后带空格
 category: blog 
 ---
 
-now is cp936,not utf-8
 
     title: where is my new blog?
     description: a bug?
