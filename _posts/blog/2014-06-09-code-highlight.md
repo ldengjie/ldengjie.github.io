@@ -14,7 +14,7 @@ category: blog
 	    cout<<"hello word! "<<endl;
 	}
 	
-<pre class="prettyPrint">
+<pre class="prettyprint">
     #include  <iostream>
     using namespace std;
     int main(int argc, char *argv[])
