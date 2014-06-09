@@ -48,16 +48,22 @@ Tips:
     // code here
     </pre>
 3. 默认显示行号，不需要添加如下代码，跟jQuery([2.1.1](http://code.jquery.com/jquery-2.1.1.min.js)),prettify([7.x-1.0-beta1](http://ftp.drupal.org/files/projects/prettify-7.x-1.0-beta1.zip))更新版本有关？下载不了的话，可能是被墙了。
+<pre class="prettyprint">
     <script type="text/javascript">
     $(window).load(function () {
             $("pre").addClass("prettyprint linenums");
             })
     </script>
+<\pre>
 4. linux 解压tar.bz2
     tar -xjf *.tar.bz2
 
 参考资料：
+
 [Jekyll中使用google-code-prettify高亮代码](http://blog.evercoding.net/2013/02/27/highlight-code-with-google-code-prettify/)
+
 [使用google-code-prettify高亮显示网页代码](http://www.cnblogs.com/changweihua/archive/2012/06/02/2531590.html)
+
 [github page code highlight](http://dj-chen.com/blog%20construction/2012/11/24/github-page-code-highlight/)
+
 [jQuery 教程](http://www.w3school.com.cn/jquery/index.asp)
