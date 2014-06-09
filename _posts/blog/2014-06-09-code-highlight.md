@@ -5,6 +5,8 @@ description: 使用prettify实现代码高亮，jQuery加入行号、修正html�
 category: blog 
 ---
 
+### 使用步骤
+
 1.[下载](https://code.google.com/p/google-code-prettify/) prettify.js和prettify.css,放到网站特定文件加下`/js/prettify/`
 
 2.在.html中加入, 考虑到加载速度，最好js写到文档末尾，body闭合标签之前，css写到头部
@@ -42,7 +44,8 @@ java
         }      
     }
 
-Tips:
+=====
+### Tips:
 
 1.步骤3的调用也可以如下,但资料说会拖延加载速度，不如先加载主要内容，再处理代码部分
 
