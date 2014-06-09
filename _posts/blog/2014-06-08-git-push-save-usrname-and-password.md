@@ -12,7 +12,7 @@ category: blog
 
 git协议才用到ssh key。
 
-*解决方法：*
+**解决方法：**
 
 1. 删除本地repository
 
@@ -27,7 +27,7 @@ git协议才用到ssh key。
 
 ===
 
-*Tips:*
+**Tips:**
 
 >fatal: https://github.com/ldengjie/ldengjie.github.io/info/refs not found: did you run git update-server-info on the server?
 
