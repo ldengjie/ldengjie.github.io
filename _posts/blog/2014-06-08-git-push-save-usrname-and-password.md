@@ -1,24 +1,24 @@
 ---
 layout: post
 title: git push save username and password
-description: ³ıÁËssh key£¬»¹Ğè¼ì²éĞ­ÒéÀàĞÍ£¬È·±£ÎªgitĞ­Òé 
+description: é™¤äº†ssh keyï¼Œè¿˜éœ€æ£€æŸ¥åè®®ç±»å‹ï¼Œç¡®ä¿ä¸ºgitåè®® 
 category: blog 
 ---
 
- git push ²»ÓÃÃ¿´ÎÊäÈëÕË»§ÃÜÂë
-³ıÁËssh key£¬»¹Ğè¼ì²éĞ­ÒéÀàĞÍ£¬È·±£ÎªgitĞ­Òé 
+ git push ä¸ç”¨æ¯æ¬¡è¾“å…¥è´¦æˆ·å¯†ç 
+é™¤äº†ssh keyï¼Œè¿˜éœ€æ£€æŸ¥åè®®ç±»å‹ï¼Œç¡®ä¿ä¸ºgitåè®® 
 
-ÅäÖÃÉÏ´«ÁËssh key µ½ github,»¹ÊÇÃ¿´Îgit push¶¼ĞèÒªÊäÈëÕÊºÅÃÜÂë¡£
+é…ç½®ä¸Šä¼ äº†ssh key åˆ° github,è¿˜æ˜¯æ¯æ¬¡git pushéƒ½éœ€è¦è¾“å…¥å¸å·å¯†ç ã€‚
 
 
-ÊäÈë`git remote -v` ¿´ÁËÏÂ£¬ÊÇhttpsĞ­Òé¡£¡£¡£
+è¾“å…¥`git remote -v` çœ‹äº†ä¸‹ï¼Œæ˜¯httpsåè®®ã€‚ã€‚ã€‚
 
-gitĞ­Òé²ÅÓÃµ½ssh key¡£
+gitåè®®æ‰ç”¨åˆ°ssh keyã€‚
 
-step 1. É¾³ı±¾µØrepository
+step 1. åˆ é™¤æœ¬åœ°repository
 step 2. git clone git@github.com:ldengjie/ldengjie.github.io.git
 
-ÕâÑù¾ÍĞĞÁË¡£
+è¿™æ ·å°±è¡Œäº†ã€‚
 
 `git remote -v`
 
@@ -31,5 +31,5 @@ Tips:
 
 fatal: https://github.com/ldengjie/ldengjie.github.io/info/refs not found: did you run git update-server-info on the server?
 
-Õâ¸ö´íÎóÒ²ËæÖ®½â¾öÁË¡£
+è¿™ä¸ªé”™è¯¯ä¹Ÿéšä¹‹è§£å†³äº†ã€‚
 
