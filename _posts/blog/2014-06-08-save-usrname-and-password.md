@@ -7,6 +7,7 @@ category: blog
 
 配置上传了ssh key 到 github,还是每次git push都需要输入帐号密码。
 
+
 输入`git remote -v` 看了下，是https协议。。。
 
 git协议才用到ssh key。
