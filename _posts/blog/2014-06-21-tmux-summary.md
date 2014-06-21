@@ -34,7 +34,7 @@ category: blog
 
 ### 在IHEP server上，怎样才能保持tmux不中断？
 
-#### 实验
+####实验
 
 1.`C+d` ,退出session，关掉Xshell窗口，中断
 
