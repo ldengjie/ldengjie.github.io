@@ -19,7 +19,7 @@ category: blog
 
 3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
-4.解决vim-powerlin和tmux主题冲突问题 [参见](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
+4.解决vim-powerlin和tmux主题冲突问题,在这里，添加`alias tmux 'tmux -2'` 到`~/.tcshrc`
 
 ### 参考资料：
 
@@ -31,6 +31,7 @@ category: blog
 
 [Tmux使用初体验](http://blog.chinaunix.net/uid-26285146-id-3252286.html)
 
+[Vim 在 tcsh 中的显示与 tmux 中的显示不同](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
 ---
 
 ###在IHEP server上，怎样才能保持tmux不中断？
