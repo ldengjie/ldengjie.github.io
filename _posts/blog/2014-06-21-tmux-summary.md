@@ -7,7 +7,12 @@ category: blog
 
 ### 安装步骤（tcsh）：
 
-[我的安装及配置代码](https://gist.github.com/ldengjie/059db63d0d21c6520274)
+[我的安装及配置代码](https://gist.github.com/ldengjie/059db63d0d21c6520274)  
+
+0.下载代码
+
+    $ git clone git@gist.github.com:/059db63d0d21c6520274.git
+    $ cd 059db63d0d21c6520274/
 
 1.修改`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
 
