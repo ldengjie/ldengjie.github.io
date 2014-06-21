@@ -19,22 +19,31 @@ category: blog
     $ bash
     $ source tmux_local_install.sh
 
-2.简单配置见`.tmux.conf`,要放到`~`下。
+2.配置PATH
+
+    $ vim ~/.tcshrc
+    > setenv PATH `INSTALLDIR`/bin:$PATH 
+
+**到这里就可以运行`tmux`了。下面是进一步的优化**
+
+3.简单配置见`.tmux.conf`,要放到`~`下。
 
     $ cp .tmux.conf ~/.tmux.conf
     or
     $ ln -s .tmux.conf ~/.tmux.conf
 
-3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
+4.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
     $ cp .tmux.init.csh ~/.tmux.init.csh
     or
     $ ln -s .tmux.init.csh ~/.tmux.init.csh
 
-4.解决vim-powerlin和tmux主题冲突问题,在这里，添加`alias tmux 'tmux -2'` 到`~/.tcshrc`
-
     $ vim ~/.tcshrc
     >source ~/.tmux.init.csh
+
+5.解决vim-powerlin和tmux主题冲突问题,在这里，添加`alias tmux 'tmux -2'` 到`~/.tcshrc`,其他必需设置已经包含在`.tmux.conf`内。完整解决方案[参见](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
+
+    $ vim ~/.tcshrc
     >alias tmux 'tmux -2'
 
 ### 参考资料：
