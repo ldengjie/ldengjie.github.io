@@ -8,7 +8,7 @@ category: blog
 
 ### 安装步骤（tcsh）：
 
-[我的安装及配置](https://gist.github.com/ldengjie/059db63d0d21c6520274)
+[我的安装及配置代码](https://gist.github.com/ldengjie/059db63d0d21c6520274)
 
 1.修改`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
 
@@ -74,13 +74,14 @@ category: blog
 ####结论
 空闲window会被关闭，若这个window为最后一个window，则这个session关闭
 
-####IHEP 服务器限制，前端程序只能运行75分钟
+###IHEP 服务器限制，前端程序只能运行75分钟
 
 tmux窗口内也是75分钟。**tmux只能让程序在断线后保留下来，仿佛没掉线，但还是要遵循IHEP服务器设置。**
 
 ---
 ###Tips
 1. 旧的ssh，tmux ls 可以看到s4,s5,s6。新开的ssh，看不到。。几个小时后，在旧的ssh里可以连接，新的仍旧看不到连接不到。
+
 >原因：登录了不同的服务器节点。。。登录到同一节点后就看到了
 
 
