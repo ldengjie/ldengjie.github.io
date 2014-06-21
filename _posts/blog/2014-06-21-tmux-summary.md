@@ -10,7 +10,7 @@ category: blog
 
 [我的安装及配置](https://gist.github.com/ldengjie/059db63d0d21c6520274)
 
-1.设置`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
+1.修改`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
 
     source tmux_local_install.sh
 
