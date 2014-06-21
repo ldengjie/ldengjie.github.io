@@ -10,11 +10,15 @@ category: blog
 
 [我的安装及配置](https://gist.github.com/ldengjie/059db63d0d21c6520274)
 
-1. 设置`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
+1.设置`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
+
     source tmux_local_install.sh
-2. 简单配置见`.tmux.conf`,要放到`~`下。
+
+2.简单配置见`.tmux.conf`,要放到`~`下。
+
 >更多细节参加 [tmux manual](http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1)
-3. `tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
+
+3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
 ### 参考资料：
 
@@ -29,13 +33,20 @@ category: blog
 ---
 
 ###在IHEP server上，怎样才能保持tmux不中断？
+
 ####实验
-1. `C+d` ,退出session，关掉Xshell窗口，中断
-2. `[前缀] C+z`,挂起session
-    2.1 不关掉 Xshell窗口，**保持**
-    2.2 关掉 Xshell窗口，中断。且之前保持的其他的session，也会丢失。`failed to connect to server: Connection refused`
-3. 在session里，关掉Xshell窗口，**保持**
-4. `[前缀] d`，分离session,关掉Xshell窗口，**保持**
+
+1.`C+d` ,退出session，关掉Xshell窗口，中断
+
+2.`[前缀] C+z`,挂起session
+
+2.1不关掉 Xshell窗口，**保持**
+
+2.2关掉 Xshell窗口，中断。且之前保持的其他的session，也会丢失。`failed to connect to server: Connection refused`
+
+3.在session里，关掉Xshell窗口，**保持**
+
+4.`[前缀] d`，分离session,关掉Xshell窗口，**保持**
 
 ####结论
 
