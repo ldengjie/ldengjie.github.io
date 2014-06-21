@@ -21,10 +21,14 @@ category: blog
 
 2.简单配置见`.tmux.conf`,要放到`~`下。
 
+    $ cp .tmux.conf ~/.tmux.conf
+    or
     $ ln -s .tmux.conf ~/.tmux.conf
 
 3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
+    $ cp .tmux.init.csh ~/.tmux.init.csh
+    or
     $ ln -s .tmux.init.csh ~/.tmux.init.csh
 
 4.解决vim-powerlin和tmux主题冲突问题,在这里，添加`alias tmux 'tmux -2'` 到`~/.tcshrc`
