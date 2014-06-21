@@ -32,7 +32,7 @@ category: blog
 
 ---
 
-###在IHEP server上，怎样才能保持tmux不中断？
+### 在IHEP server上，怎样才能保持tmux不中断？
 
 ####实验
 
