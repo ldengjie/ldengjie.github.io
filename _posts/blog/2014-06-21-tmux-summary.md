@@ -11,15 +11,22 @@ category: blog
 
 1.修改`tmux_local_install.sh`,设置`INSTALLDIR`为安装位置
 
-    source tmux_local_install.sh
+    $ bash
+    $ source tmux_local_install.sh
 
 2.简单配置见`.tmux.conf`,要放到`~`下。
 
->更多细节参加 [tmux manual](http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1)
+    $ ln -s .tmux.conf ~/.tmux.conf
 
 3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
+    $ ln -s .tmux.init.csh ~/.tmux.init.csh
+
 4.解决vim-powerlin和tmux主题冲突问题,在这里，添加`alias tmux 'tmux -2'` 到`~/.tcshrc`
+
+    $ vim ~/.tcshrc
+    >source ~/.tmux.init.csh
+    >alias tmux 'tmux -2'
 
 ### 参考资料：
 
