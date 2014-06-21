@@ -5,7 +5,6 @@ description: 没有root权限，自动安装tmux脚本；基本的配置；自�
 category: blog 
 ---
 
-
 ### 安装步骤（tcsh）：
 
 [我的安装及配置代码](https://gist.github.com/ldengjie/059db63d0d21c6520274)
