@@ -19,6 +19,8 @@ category: blog
 
 3.`tchs`版的自动化脚本`.tmux.init.csh`，放到`~`下,然后添加`source ~/.tmux.init.csh`到`~/.tcshrc`,每次启动就可以自动打开相应窗口了。
 
+4.解决vim-powerlin和tmux主题冲突问题 [参见](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
+
 ### 参考资料：
 
 [tmux入门](http://www.ituring.com.cn/minibook/10707)
