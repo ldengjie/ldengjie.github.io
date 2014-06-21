@@ -1,7 +1,7 @@
 ---
 layout: post
 title: tmux 安装及配置 
-description: 没有root权限，一个脚本自动安装tmux；基本的配置；自动化tcsh脚本
+description: 没有root权限，自动安装tmux脚本；基本的配置；自动化启动打开tmux脚本（tcsh)
 category: blog 
 ---
 
