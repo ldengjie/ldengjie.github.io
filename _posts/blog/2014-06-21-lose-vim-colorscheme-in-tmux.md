@@ -7,7 +7,7 @@ category: blog
 
 ###问题
 
-tcsh下，在tmux里面，vim的配色不能正常显示
+tcsh下，在tmux里面，vim的配色不能正常显示,shell显示正常。
 
 ###解决办法
 
@@ -25,7 +25,7 @@ tcsh下，在tmux里面，vim的配色不能正常显示
 
 在第二步里:
 
-* `set -g default-terminal "screen-256color"` 不起任何作用
+* `set -g default-terminal "screen-256color"` 对vim没作用，shell显示正常。
 
 * `set -g default-terminal "xterm-256color"` 对vim起作用，但shell里丢失了颜色。。。
 
