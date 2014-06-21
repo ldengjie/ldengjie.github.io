@@ -48,16 +48,18 @@ category: blog
 
 ### 参考资料：
 
-[tmux入门](http://www.ituring.com.cn/minibook/10707)
+1. [tmux入门](http://www.ituring.com.cn/minibook/10707)
 
-[Manual Pages](http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1)
+2. [Manual Pages](http://www.openbsd.org/cgi-bin/man.cgi?query=tmux&sektion=1)
 
-[bash自动化脚本](https://github.com/xuxiaodong/tmuxen/blob/master/tmuxen)
+3. [bash自动化脚本](https://github.com/xuxiaodong/tmuxen/blob/master/tmuxen)
 
-[Tmux使用初体验](http://blog.chinaunix.net/uid-26285146-id-3252286.html)
+4. [Tmux使用初体验](http://blog.chinaunix.net/uid-26285146-id-3252286.html)
 
-[Vim 在 tcsh 中的显示与 tmux 中的显示不同](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
----
+5. [Vim 在 tcsh 中的显示与 tmux 中的显示不同](http://ldengjie.github.io/lose-vim-colorscheme-in-tmux/)
+
+
+------
 
 ###在IHEP server上，怎样才能保持tmux不中断？
 
