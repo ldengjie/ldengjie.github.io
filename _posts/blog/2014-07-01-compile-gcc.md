@@ -7,7 +7,7 @@ category: blog
 
 安装gcc4.9.0（4.7.5以上都支持c11）
 
-0.安装 GMP、MPFR、MPC这三个库
+####0.安装 GMP、MPFR、MPC这三个库
 
 1.下载 
 
