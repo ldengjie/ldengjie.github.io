@@ -39,6 +39,7 @@ category: blog
 [gcc安装参考](http://ldengjie.github.io/compile-gcc/)
 
 2】编译时出错：
+
 ```
     g++: error: misc/minicern/src/hbook.o: No such file or directory
     g++: error: misc/minicern/src/kernlib.o: No such file or directory
@@ -46,4 +47,5 @@ category: blog
     make: *** [lib/libminicern.so] Error 1
     make: *** Waiting for unfinished jobs....
 ```
+
 原因： gfortran版本太低了，重新编译gcc加入fortran支持
