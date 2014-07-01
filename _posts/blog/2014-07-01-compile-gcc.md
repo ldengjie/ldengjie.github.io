@@ -5,11 +5,11 @@ description: gcc4.9.0支持c11，而c11是ROOT6.0必需的
 category: blog 
 ---
 
-安装gcc4.9.0（4.7.5以上都支持c11）
+###安装gcc4.9.0（4.7.5以上都支持c11）
 
 ####0.安装 GMP、MPFR、MPC这三个库
 
-###1.下载 
+####1.下载 
 
 参看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
 
@@ -17,7 +17,7 @@ category: blog
 
 只是压缩格式不相同，内容完全一致，下载其中一种即可。 
 
-2.解压缩 
+####2.解压缩 
 
 根据压缩格式，选择下面相应的一种方式解包（以下的"%"表示命令行提示符）： 
 
@@ -26,7 +26,7 @@ category: blog
 
 新生成的gcc-4.9.0这个目录被称为源目录，用${srcdir}表示他。以后在出现${srcdir}的地方，应该用真实的路径来替换他。 
 
-3.建立目标目录 
+####3.建立目标目录 
 
 目标目录（用${objdir}表示）是用来存放编译结果的地方。GCC建议编译后的文件不要放在源目录${srcdir]中（虽然这样做也能），最佳独立存放在另外一个目录中，而且不能是${srcdir}的子目录。例如，能这样建立一个叫 gcc-build的目标目录（和源目录${srcdir}是同级目录）： 
 
@@ -35,7 +35,7 @@ category: blog
 
 以下的操作主要是在目标目录 ${objdir} 下进行。 
 
-4.设置 
+####4.设置 
 
 设置的目的是决定将GCC编译器安装到什么地方（${destdir}），支持什么语言及指定其他一些选项等。其中，${destdir}不能和${objdir}或${srcdir}目录相同。 设置是通过执行${srcdir}下的configure来完成的。其命令格式为（记得用你的真实路径替换${destdir}）： 
 
@@ -48,13 +48,13 @@ category: blog
 
 须指定GMP,MPFR,MPC的位置，编译安装的语言，一定要加上fortran，否则ROOT编译出错，gfrotran版本太低。(单机编译一般是Host，在集群服务器上估计是要用--build,这个不是很明白，没有它编译会找不到ar之类的。--build的值，可以从/usr/lib/x86_64-redhat-linux4E看出来） 将GCC安装在/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0目录下，支持C/C++和JAVA语言，其他选项参见GCC提供的帮助说明。 
 
-5.编译 
+####5.编译 
 
     % make 
 
 这是个漫长的过程。在服务器上，这个过程用了150多分钟。 下次应该尝试make -j4 (% cat /proc/cpuinfo | grep "cores" | uniq 查看cpu个数，-jN N<=cpu个数)，用了-j4大概90分钟.
 
-6.安装 
+####6.安装 
 
 执行下面的命令将编译好的库文件等拷贝到${destdir}目录中（根据你设定的路径，可能需要管理员的权限）： 
 
@@ -62,7 +62,7 @@ category: blog
 
 至此，GCC 4.9.0安装过程就完成了。 
 
-7.配置路径~/.tchsrc
+####7.配置路径~/.tchsrc
 
     setenv PATH /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/bin:$PATH
     setenv LD_LIBRARY_PATH /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib64:/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2/lib:$LD_LIBRARY_PATH
@@ -81,7 +81,7 @@ category: blog
 
 =====
 
-make时出现的错误：
+###make时出现的错误：
 
 1】（4.设置 %../gcc-4.9.0/configure ****时）
 
