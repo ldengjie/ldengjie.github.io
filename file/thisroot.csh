@@ -14,7 +14,7 @@ endif
 # $_ should be source .../thisroot.csh
 set ARGS=($_)
 if ("$ARGS" != "") then
-    set thisrootlink=`readlink ${ARGS[2]}`
+    set thisrootlink=`readlink -e ${ARGS[2]}`
     if ("$thisrootlink" != "") then
         set thisroot="`dirname $thisrootlink`"
     else
