@@ -129,18 +129,20 @@ build版本在下面看到/usr/lib/x86_64-redhat-linux4E
 1】其他错误情形,configure不同而带来的失败
 ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0 --enable-threads=posix --enable-checking=release --disable-multilib --enable-languages=c,c++,java  --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
+```
 **Bootstrap comparison failure!**
+```
 
 ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0  --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,java --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
-**
+```
 checking for X... (cached) no
 configure: error: GTK+ peers requested but no X library available
 configure: error: ../../../../../gcc-4.9.0/libjava/classpath/configure failed for classpath
 make[1]: *** [configure-target-libjava] Error 1
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
 make: *** [all] Error 2
-**
+```
 
 2】2.5小时出现一下错误！！！
 
@@ -166,11 +168,11 @@ make: *** [all] Error 2
 
 3】15：44-17：43失败
 
-**
+```
 libtool: link: /afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/./gcc/gcj -B/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/ -B/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/./gcc/ -B/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/bin/ -B/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/lib/ -isystem /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/include -isystem /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/sys-include -fomit-frame-pointer -Usun -g -O2 -o .libs/gc-analyze --main=gnu.gcj.tools.gc_analyze.MemoryAnalyze -shared-libgcc  -L/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/.libs -L/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava ./.libs/libgcj-tools.so -lm /afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/.libs/libgcj.so ./.libs/libgcj.so -lpthread -ldl -lrt -Wl,-rpath -Wl,/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib/../lib64
 make[3]: Leaving directory `/scratchfs/dyw/lidj/gcc-build/x86_64-redhat-linux/libjava'
 make[2]: Leaving directory `/scratchfs/dyw/lidj/gcc-build/x86_64-redhat-linux/libjava'
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
-**
+```
 
 （该去掉java,反正用不着）
