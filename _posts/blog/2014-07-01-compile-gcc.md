@@ -73,6 +73,7 @@ category: blog
 
 ```
 % gcc -v 
+
 Using built-in specs.
 COLLECT_GCC=gcc
 COLLECT_LTO_WRAPPER=/publicfs/dyb/user/lidj/software/gcc-4.9.0/bin/../libexec/gcc/x86_64-redhat-linux/4.9.0/lto-wrapper
