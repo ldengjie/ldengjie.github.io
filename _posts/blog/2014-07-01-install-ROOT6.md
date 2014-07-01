@@ -17,22 +17,22 @@ category: blog
 
     % vi configure 
 
-    >//配置fftw编译
-    >--with-fftw3-incdir="/usr/include/"
-    >--with-fftw3-libdir="/usr/lib64/"
-    >//配置roofit编译
-    >enable_roofit=yes
-    >./configure [<arch>]      [set arch appropriately if no proper default]
+    //配置fftw编译
+    --with-fftw3-incdir="/usr/include/"
+    --with-fftw3-libdir="/usr/lib64/"
+    //配置roofit编译
+    enable_roofit=yes
+    ./configure [<arch>]      [set arch appropriately if no proper default]
 
     % (g)make                   [or, make -j n for n core machines]
 
 3.Add bin/ to PATH and lib/ to LD_LIBRARY_PATH. For the csh shell family do:
 
-    % source bin/thisroot.csh **(原来的有错误——不能用ln -s——不能用cd显示文件，做了修改，见附件)**
+    % source bin/thisroot.csh (原来的有错误——不能用ln -s——不能用cd显示文件，做了修改，见附件)
 
 4.Try running ROOT:
 
-    % root **(.rootrc有个错误，造成TBrowser b时  segmentation violation，已删除该行)**
+    % root (.rootrc有个错误，造成TBrowser b时  segmentation violation，已删除该行)
 
 ####Tips:
 
