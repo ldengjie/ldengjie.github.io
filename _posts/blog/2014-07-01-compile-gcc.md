@@ -11,26 +11,27 @@ category: blog
 
 1. 下载 
 
-　　参看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
+参看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
 
     wget ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.9.0/gcc-4.9.0.tar.gz
 
-    只是压缩格式不相同，内容完全一致，下载其中一种即可。 
+只是压缩格式不相同，内容完全一致，下载其中一种即可。 
+
 2. 解压缩 
 
-　　根据压缩格式，选择下面相应的一种方式解包（以下的"%"表示命令行提示符）： 
+根据压缩格式，选择下面相应的一种方式解包（以下的"%"表示命令行提示符）： 
 
-　　% tar -zxvf gcc-4.9.0.tar.gz 或
+    % tar -zxvf gcc-4.9.0.tar.gz 或
     % tar -xjvf gcc-4.9.0.tar.bz2
 
-　　新生成的gcc-4.9.0这个目录被称为源目录，用${srcdir}表示他。以后在出现${srcdir}的地方，应该用真实的路径来替换他。 
+新生成的gcc-4.9.0这个目录被称为源目录，用${srcdir}表示他。以后在出现${srcdir}的地方，应该用真实的路径来替换他。 
 
-　　3. 建立目标目录 
+3. 建立目标目录 
 
-　　目标目录（用${objdir}表示）是用来存放编译结果的地方。GCC建议编译后的文件不要放在源目录${srcdir]中（虽然这样做也能），最佳独立存放在另外一个目录中，而且不能是${srcdir}的子目录。例如，能这样建立一个叫 gcc-build的目标目录（和源目录${srcdir}是同级目录）： 
+目标目录（用${objdir}表示）是用来存放编译结果的地方。GCC建议编译后的文件不要放在源目录${srcdir]中（虽然这样做也能），最佳独立存放在另外一个目录中，而且不能是${srcdir}的子目录。例如，能这样建立一个叫 gcc-build的目标目录（和源目录${srcdir}是同级目录）： 
 
-    　　% mkdir gcc-build
-        % cd gcc-build 
+　　% mkdir gcc-build
+    % cd gcc-build 
 
         以下的操作主要是在目标目录 ${objdir} 下进行。 
 
