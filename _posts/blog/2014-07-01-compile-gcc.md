@@ -71,15 +71,16 @@ category: blog
 
 查看版本：
 
-    % gcc -v 
-
-    Using built-in specs.
-    COLLECT_GCC=gcc
-    COLLECT_LTO_WRAPPER=/publicfs/dyb/user/lidj/software/gcc-4.9.0/bin/../libexec/gcc/x86_64-redhat-linux/4.9.0/lto-wrapper
-    Target: x86_64-redhat-linux
-    Configured with: ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0 --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++ --disable-dssi --disable-plugin --with-cpu=generic --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
-    Thread model: posix
-    gcc version 4.9.0 (GCC)
+```
+% gcc -v 
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/publicfs/dyb/user/lidj/software/gcc-4.9.0/bin/../libexec/gcc/x86_64-redhat-linux/4.9.0/lto-wrapper
+Target: x86_64-redhat-linux
+Configured with: ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0 --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,fortran --disable-dssi --disable-plugin --with-cpu=generic --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
+Thread model: posix
+gcc version 4.9.0 (GCC)
+```
 
 =====
 
