@@ -5,7 +5,7 @@ description: 很多root代码在高版本下才能运行，比如简单的vector
 category: blog 
 ---
 
-编译到源代码目录root-v6-00/里
+#编译到源代码目录root-v6-00/里
 
 1.Get the sources of the latest ROOT (see above)
 
@@ -22,8 +22,8 @@ category: blog
     --with-fftw3-libdir="/usr/lib64/"
     //配置roofit编译
     enable_roofit=yes
-    ./configure [<arch>]      [set arch appropriately if no proper default]
 
+    % ./configure [<arch>]      [set arch appropriately if no proper default]
     % (g)make                   [or, make -j n for n core machines]
 
 3.Add bin/ to PATH and lib/ to LD_LIBRARY_PATH. For the csh shell family do:
