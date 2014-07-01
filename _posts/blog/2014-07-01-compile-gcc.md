@@ -118,7 +118,7 @@ make时出现的错误：
 
 3】(5.编译 %make时)
 
-make[2]: x86_64-redhat-linux-ar: Command not found
+**make[2]: x86_64-redhat-linux-ar: Command not found**
 
 *解决方法：*改用--build=x86_64-redhat-linux
 build版本在下面看到/usr/lib/x86_64-redhat-linux4E 
