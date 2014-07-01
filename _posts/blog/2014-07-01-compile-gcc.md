@@ -144,7 +144,7 @@ make: *** [all] Error 2
 
 2】2.5小时出现一下错误！！！
 
-**
+```
 Comparing stages 2 and 3
 warning: gcc/cc1-checksum.o differs
 warning: gcc/cc1plus-checksum.o differs
@@ -157,7 +157,7 @@ make[2]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
 make[1]: *** [stage3-bubble] Error 2
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
 make: *** [all] Error 2
-**
+```
 
 >You likely didn't clean up properly in-between tries. Do a make distclean and try again. Sorry.
 
