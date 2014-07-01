@@ -48,7 +48,7 @@ category: blog
 
     ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0  --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,fortran --disable-dssi --disable-plugin  --with-cpu=generic --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
-须指定GMP,MPFR,MPC的位置，编译安装的语言，一定要加上fortran，否则ROOT编译出错，gfrotran版本太低。(单机编译一般是Host，在集群服务器上估计是要用--build,这个不是很明白，没有它编译会找不到ar之类的。--build的值，可以从/usr/lib/x86_64-redhat-linux4E看出来） 将GCC安装在/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0目录下，支持C/C++和JAVA语言，其他选项参见GCC提供的帮助说明。 
+须指定GMP,MPFR,MPC的位置，编译安装的语言，一定要加上fortran，否则ROOT编译出错，因为IHEP服务器上gfrotran版本太低。(单机编译一般是Host，在集群服务器上估计是要用--build,这个不是很明白，没有它编译会找不到ar之类的。--build的值，可以从/usr/lib/x86_64-redhat-linux4E看出来） 将GCC安装在/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0目录下，支持C/C++和JAVA语言，其他选项参见GCC提供的帮助说明。 
 
 ####5.编译 
 
