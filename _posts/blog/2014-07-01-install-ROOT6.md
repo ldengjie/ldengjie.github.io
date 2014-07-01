@@ -38,7 +38,7 @@ category: blog
 
 ####Tips:
 
-1】需要gcc for c++11，需要python>2.5
+1】需要gcc for c11，需要python>2.5
 
 [gcc安装参考](http://ldengjie.github.io/compile-gcc/)
 
