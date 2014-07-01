@@ -7,10 +7,11 @@ category: blog
 
 ###编译到源代码目录root-v6-00/里
 
-1.Get the sources of the latest ROOT (see above)
+1.Get the sources of the latest ROOT 
 
     % git clone http://root.cern.ch/git/root.git root-v6-00
     % cd root-v6-00
+    % git tag -l
     % git checkout -b v6-00-01 v6-00-01
 
 2.Type the build commands:
