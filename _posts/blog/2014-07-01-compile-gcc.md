@@ -130,6 +130,7 @@ build版本在下面路径看到/usr/lib/x86_64-redhat-linux4E,或者gcc -v 查�
 =================
 
 1】其他错误情形,configure不同而带来的失败
+
 ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0 --enable-threads=posix --enable-checking=release --disable-multilib --enable-languages=c,c++,java  --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
 ```
