@@ -35,7 +35,7 @@ category: blog
 
 以下的操作主要是在目标目录 ${objdir} 下进行。 
 
-4. 设置 
+4.设置 
 
 设置的目的是决定将GCC编译器安装到什么地方（${destdir}），支持什么语言及指定其他一些选项等。其中，${destdir}不能和${objdir}或${srcdir}目录相同。 设置是通过执行${srcdir}下的configure来完成的。其命令格式为（记得用你的真实路径替换${destdir}）： 
 
@@ -48,13 +48,13 @@ category: blog
 
 须指定GMP,MPFR,MPC的位置，编译安装的语言，一定要加上fortran，否则ROOT编译出错，gfrotran版本太低。(单机编译一般是Host，在集群服务器上估计是要用--build,这个不是很明白，没有它编译会找不到ar之类的。--build的值，可以从/usr/lib/x86_64-redhat-linux4E看出来） 将GCC安装在/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0目录下，支持C/C++和JAVA语言，其他选项参见GCC提供的帮助说明。 
 
-5. 编译 
+5.编译 
 
     % make 
 
 这是个漫长的过程。在服务器上，这个过程用了150多分钟。 下次应该尝试make -j4 (% cat /proc/cpuinfo | grep "cores" | uniq 查看cpu个数，-jN N<=cpu个数)，用了-j4大概90分钟.
 
-6. 安装 
+6.安装 
 
 执行下面的命令将编译好的库文件等拷贝到${destdir}目录中（根据你设定的路径，可能需要管理员的权限）： 
 
@@ -66,6 +66,8 @@ category: blog
 
     setenv PATH /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/bin:$PATH
     setenv LD_LIBRARY_PATH /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib64:/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2/lib:$LD_LIBRARY_PATH
+
+查看版本：
 
     % gcc -v 
 
@@ -81,7 +83,8 @@ category: blog
 
 make时出现的错误：
 
-1】（4. 设置 %../gcc-4.9.0/configure ****）
+1】（4.设置 %../gcc-4.9.0/configure ****时）
+
 配置gcc的过程中出现错误：**gcc configure: error: Building GCC requires GMP 4.2+, MPFR 2.3.1+ and MPC 0.8.0+**
 
 *解决方法：*说明要安装gcc需要GMP、MPFR、MPC这三个库，可从ftp://gcc.gnu.org/pub/gcc/infrastructure/下载相应的压缩包。由于MPFR依赖GMP，而MPC依赖GMP和MPFR，所以要先安装GMP，其次MPFR，最后才是MPC。这里三个库我用的版本分别是gMP4.3.2，mpfr2.4.2和mpc0.8.1。
@@ -105,7 +108,7 @@ make时出现的错误：
 
     setenv LD_LIBRARY_PATH /afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2/lib:$LD_LIBRARY_PATH
 
-2】(5. 编译 %make)
+2】(5.编译 %make时)
 
 **error while loading shared libraries: libmpc.so.2: cannot open shared object file: No such file or directory**
 
@@ -113,7 +116,7 @@ make时出现的错误：
 
     setenv LD_LIBRARY_PATH /afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2/lib:$LD_LIBRARY_PATH　
 
-3】(5. 编译 %make)
+3】(5.编译 %make时)
 
 make[2]: x86_64-redhat-linux-ar: Command not found
 
@@ -126,19 +129,22 @@ build版本在下面看到/usr/lib/x86_64-redhat-linux4E
 1】其他错误情形,configure不同而带来的失败
 ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0 --enable-threads=posix --enable-checking=release --disable-multilib --enable-languages=c,c++,java  --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
-（Bootstrap comparison failure!）
+**Bootstrap comparison failure!**
 
 ../gcc-4.9.0/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0  --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-libgcj-multifile --enable-languages=c,c++,java --enable-java-awt=gtk --disable-dssi --disable-plugin --with-java-home=/usr/lib/jvm/java-1.4.2-gcj-1.4.2.0/jre --with-cpu=generic --build=x86_64-redhat-linux --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-mpc=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1
 
-（checking for X... (cached) no
+**
+checking for X... (cached) no
 configure: error: GTK+ peers requested but no X library available
 configure: error: ../../../../../gcc-4.9.0/libjava/classpath/configure failed for classpath
 make[1]: *** [configure-target-libjava] Error 1
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
-make: *** [all] Error 2）
+make: *** [all] Error 2
+**
 
 2】2.5小时出现一下错误！！！
 
+**
 Comparing stages 2 and 3
 warning: gcc/cc1-checksum.o differs
 warning: gcc/cc1plus-checksum.o differs
@@ -151,16 +157,20 @@ make[2]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
 make[1]: *** [stage3-bubble] Error 2
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
 make: *** [all] Error 2
+**
 
 >You likely didn't clean up properly in-between tries. Do a make distclean and try again. Sorry.
+
 >already solved it by make distclean and configure again.
 
 
 3】15：44-17：43失败
 
+**
 libtool: link: /afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/./gcc/gcj -B/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/ -B/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/./gcc/ -B/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/bin/ -B/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/lib/ -isystem /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/include -isystem /afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/x86_64-redhat-linux/sys-include -fomit-frame-pointer -Usun -g -O2 -o .libs/gc-analyze --main=gnu.gcj.tools.gc_analyze.MemoryAnalyze -shared-libgcc  -L/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/.libs -L/afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava ./.libs/libgcj-tools.so -lm /afs/ihep.ac.cn/users/l/lidj/scratchOld/gcc-build/x86_64-redhat-linux/libjava/.libs/libgcj.so ./.libs/libgcj.so -lpthread -ldl -lrt -Wl,-rpath -Wl,/afs/ihep.ac.cn/users/l/lidj/user/software/gcc-4.9.0/lib/../lib64
 make[3]: Leaving directory `/scratchfs/dyw/lidj/gcc-build/x86_64-redhat-linux/libjava'
 make[2]: Leaving directory `/scratchfs/dyw/lidj/gcc-build/x86_64-redhat-linux/libjava'
 make[1]: Leaving directory `/scratchfs/dyw/lidj/gcc-build'
+**
 
 （该去掉java,反正用不着）
