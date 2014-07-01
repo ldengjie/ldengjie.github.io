@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 源码编译gcc4.9.0
+title: RedHat源码编译gcc4.9.0
 description: gcc4.9.0支持c11，而c11是ROOT6.0必需的
 category: blog 
 ---
