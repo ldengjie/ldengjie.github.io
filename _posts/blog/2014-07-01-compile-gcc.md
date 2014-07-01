@@ -123,7 +123,8 @@ category: blog
 **make[2]: x86_64-redhat-linux-ar: Command not found**
 
 *解决方法：*改用--build=x86_64-redhat-linux
-build版本在下面看到/usr/lib/x86_64-redhat-linux4E 
+
+build版本在下面路径看到/usr/lib/x86_64-redhat-linux4E,或者gcc -v 查看之前的配置信息
 
 
 =================
