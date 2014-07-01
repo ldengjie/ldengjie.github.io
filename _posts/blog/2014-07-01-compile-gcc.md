@@ -104,7 +104,7 @@ make时出现的错误：
     ../mpfr-2.4.2/configure  --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2 --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2
     ../mpc-0.8.1/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1 --with-gmp=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2 --with-mpfr=/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2
 
-安装好这三个库之后，需要添加环境变量LD_LIBRARY_PATH以指出前面三个库的位置，键入以下命令：
+安装好这三个库之后，需要添加环境变量LD_LIBRARY_PATH以指出前面三个库的位置，键入以下命令：(可加入到~/.tcshrc，因为以后gcc运行也需要)
 
     setenv LD_LIBRARY_PATH /afs/ihep.ac.cn/users/l/lidj/user/software/mpc-0.8.1/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2/lib:/afs/ihep.ac.cn/users/l/lidj/user/software/mpfr-2.4.2/lib:$LD_LIBRARY_PATH
 
