@@ -13,7 +13,7 @@ category: blog
 
 ####1.下载 
 
-参看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
+查看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
 
     wget ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.9.0/gcc-4.9.0.tar.gz
 
