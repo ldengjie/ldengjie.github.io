@@ -9,7 +9,7 @@ category: blog
 
 ####0.安装 GMP、MPFR、MPC这三个库
 
-1.下载 
+###1.下载 
 
 参看最新版本：ftp://gcc.gnu.org/pub/gcc/releases/
 
