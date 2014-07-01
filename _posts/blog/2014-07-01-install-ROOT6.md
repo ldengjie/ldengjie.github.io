@@ -30,11 +30,8 @@ category: blog
 
     % source bin/thisroot.csh (原来的有错误——不能用ln -s——不能用cd显示文件，做了修改)
 
-[参见](http://ldengjie.github.io/file/thisroot.csh)
 
-[参见](file/thisroot.csh)
-
-[参见](../../file/thisroot.csh)
+[修改后的thisroot.csh在这里](../../file/thisroot.csh)
 
 4.Try running ROOT:
 
@@ -47,6 +44,10 @@ category: blog
 1】需要gcc for c11，需要python>2.5
 
 [gcc安装参考](http://ldengjie.github.io/compile-gcc/)
+
+[gcc安装参考](../../compile-gcc/)
+
+[gcc安装参考](~/compile-gcc/)
 
 2】编译时出错：
 
