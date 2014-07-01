@@ -23,8 +23,8 @@ category: blog
     //配置roofit编译
     enable_roofit=yes
 
-    % ./configure [<arch>]      [set arch appropriately if no proper default]
-    % (g)make                   [or, make -j n for n core machines]
+    % ./configure [<arch>]  [set arch appropriately if no proper default]
+    % (g)make               [or, make -j n for n core machines]
 
 3.Add bin/ to PATH and lib/ to LD_LIBRARY_PATH. For the csh shell family do:
 
