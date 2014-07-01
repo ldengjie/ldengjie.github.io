@@ -5,7 +5,7 @@ description: 很多root代码在高版本下才能运行，比如简单的vector
 category: blog 
 ---
 
-#编译到源代码目录root-v6-00/里
+###编译到源代码目录root-v6-00/里
 
 1.Get the sources of the latest ROOT (see above)
 
@@ -33,6 +33,8 @@ category: blog
 4.Try running ROOT:
 
     % root (.rootrc有个错误，造成TBrowser b时  segmentation violation，已删除该行)
+
+=====
 
 ####Tips:
 
