@@ -16,12 +16,14 @@ category: blog
 2.Type the build commands:
 
     % vi configure 
-    //配置fftw编译
-    --with-fftw3-incdir="/usr/include/"
-    --with-fftw3-libdir="/usr/lib64/"
-    //配置roofit编译
-    enable_roofit=yes
-    ./configure [<arch>]      [set arch appropriately if no proper default]
+
+    >//配置fftw编译
+    >--with-fftw3-incdir="/usr/include/"
+    >--with-fftw3-libdir="/usr/lib64/"
+    >//配置roofit编译
+    >enable_roofit=yes
+    >./configure [<arch>]      [set arch appropriately if no proper default]
+
     % (g)make                   [or, make -j n for n core machines]
 
 3.Add bin/ to PATH and lib/ to LD_LIBRARY_PATH. For the csh shell family do:
