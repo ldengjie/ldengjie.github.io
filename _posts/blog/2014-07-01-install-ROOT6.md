@@ -28,7 +28,7 @@ category: blog
 
 3.Add bin/ to PATH and lib/ to LD_LIBRARY_PATH. For the csh shell family do:
 
-    % source bin/thisroot.csh (原来的有错误——不能用ln -s——不能用cd显示文件，做了修改，[参见](file/thisroot.csh))
+    % source bin/thisroot.csh (原来的有错误——不能用ln -s——不能用cd显示文件，做了修改，[参见](http://ldengjie.github.io/file/thisroot.csh))
 
 4.Try running ROOT:
 
