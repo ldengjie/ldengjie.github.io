@@ -43,11 +43,7 @@ category: blog
 
 1】需要gcc for c11，需要python>2.5
 
-[gcc安装参考](http://ldengjie.github.io/compile-gcc/)
-
 [gcc安装参考](../../compile-gcc/)
-
-[gcc安装参考](~/compile-gcc/)
 
 2】编译时出错：
 
