@@ -42,7 +42,7 @@ category: blog
 
 ####Tips:
 
-1】需要gcc for c11，需要python>2.5
+1】需要gcc>=4.8 for c11，需要python>2.5
 
 [gcc安装参考](../../compile-gcc/)
 
