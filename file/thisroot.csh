@@ -7,49 +7,21 @@
 #
 # Author: Fons Rademakers, 18/8/2006
 
+set cshPath="/publicfs/dyb/user/lidj/software/root-v6-00/bin/thisroot.csh"
+
 if ($?ROOTSYS) then
    set old_rootsys="$ROOTSYS"
 endif
 
-# $_ should be source .../thisroot.csh
-set ARGS=($_)
-if ("$ARGS" != "") then
-    set thisrootlink=`readlink -e ${ARGS[2]}`
-    if ("$thisrootlink" != "") then
-        set thisroot="`dirname $thisrootlink`"
-    else
-   set thisroot="`dirname ${ARGS[2]}`"
-   endif
+set cshRealPath=`readlink -f ${cshPath}`
+if ("$cshRealPath" != "") then
+    set thisroot="`dirname $cshRealPath`"
 else
-   # But $_ might not be set if the script is source non-interactively.
-   # In [t]csh the sourced file is inserted 'in place' inside the
-   # outer script, so we need an external source of information
-   # either via the current directory or an extra parameter.
-   if ( -e thisroot.csh ) then
-      set thisroot=${PWD}
-   else if ( -e bin/thisroot.csh ) then
-      set thisroot=${PWD}/bin
-   else if ( "$1" != "" ) then
-      if ( -e ${1}/bin/thisroot.csh ) then
-         set thisroot=${1}/bin
-      else if ( -e ${1}/thisroot.csh ) then
-         set thisroot=${1}
-      else
-         echo "thisroot.csh: ${1} does not contain a ROOT installation"
-      endif
-   else
-      echo 'Error: The call to "source where_root_is/bin/thisroot.csh" can not determine the location of the ROOT installation'
-      echo "because it was embedded another script (this is an issue specific to csh)."
-      echo "Use either:"
-      echo "   cd where_root_is; source bin/thisroot.csh"
-      echo "or"
-      echo "   source where_root_is/bin/thisroot.csh where_root_is"
-   endif
+    set thisroot="`dirname $cshPath`"
 endif
 
 if ($?thisroot) then
 setenv ROOTSYS `dirname $thisroot`
-#setenv ROOTSYS "`(cd ${thisroot}/..;pwd)`"
 
 if ($?old_rootsys) then
    setenv PATH `echo $PATH | sed -e "s;:$old_rootsys/bin:;:;g" \
