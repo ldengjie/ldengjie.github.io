@@ -93,6 +93,13 @@ gcc version 4.9.0 (GCC)
 
 *解决方法：*说明要安装gcc需要GMP、MPFR、MPC这三个库，可从ftp://gcc.gnu.org/pub/gcc/infrastructure/下载相应的压缩包。由于MPFR依赖GMP，而MPC依赖GMP和MPFR，所以要先安装GMP，其次MPFR，最后才是MPC。这里三个库我用的版本分别是gMP4.3.2，mpfr2.4.2和mpc0.8.1。
 
+ftp://gcc.gnu.org/pub/gcc/infrastructure/gmp-4.3.2.tar.bz2
+
+ftp://gcc.gnu.org/pub/gcc/infrastructure/mpfr-2.4.2.tar.bz2
+
+ftp://gcc.gnu.org/pub/gcc/infrastructure/mpc-0.8.1.tar.gz
+
+
 先开始安装GMP。解压GMP的压缩包后，得到源代码目录gmp-4.3.2。在该目录的同级目录下建立一个临时的编译目录，这里命名为gmp-build。然后开始配置安装选项，进入gmp-build目录，输入以下命令进行配置：
 
     ../gmp-4.3.2/configure --prefix=/afs/ihep.ac.cn/users/l/lidj/user/software/gmp-4.3.2
