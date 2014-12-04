@@ -1,56 +1,56 @@
 ---
 layout: post
 title: win8+texlive2014+XeLatex+gvim+latexsuite+SumatraPDF
-description: ÔÚĞÂwin8ÏµÍ³ÉÏÓÃvim±à¼­±àÒëlatex,Ö§³ÖÖĞÎÄ£¬Ë«ÏòËÑË÷
+description: åœ¨æ–°win8ç³»ç»Ÿä¸Šç”¨vimç¼–è¾‘ç¼–è¯‘latex,æ”¯æŒä¸­æ–‡ï¼ŒåŒå‘æœç´¢
 category: blog 
 ---
 
-###Ãû×Ö½âÊÍ
-tex:ÅÅ°æÓïÑÔ£¬¾ÍÏñCÓïÑÔ
-texlive:texµÄ±àÒëÏµÍ³£¬°üº¬±àÒëËùÓÃµÄ¹¤¾ß¡¢ä¯ÀÀ¹¤¾ß(Ghostscript¡¢GSview)ºÍ±à¼­¹¤¾ß(texworks)£¬¾ÍÏñgcc4.9¡£Æ½ĞĞµÄÓĞMiKTeX£¬Á½Õßµ×²ã²»Í¬;ÒÔMiKTeXÎª»ù´¡µÄCTex,·â×°ÁË±àÒë¹¤¾ß¡¢ä¯ÀÀ¹¤¾ß(Ghostscript¡¢GSview),±à¼­¹¤¾ßÎª(WinEdt).
-XeLatex:texlive¡¢CTexÖĞµÄÖÚ¶à±àÒë¹¤¾ßÖ®Ò»£¬Ö±½ÓÖ§³ÖUnicode±àÂë£¬²»ÓÃÅäÖÃ×ÖÌå£¬ÖĞÎÄÇåÎú
+###åå­—è§£é‡Š
+tex:æ’ç‰ˆè¯­è¨€ï¼Œå°±åƒCè¯­è¨€
+texlive:texçš„ç¼–è¯‘ç³»ç»Ÿï¼ŒåŒ…å«ç¼–è¯‘æ‰€ç”¨çš„å·¥å…·ã€æµè§ˆå·¥å…·(Ghostscriptã€GSview)å’Œç¼–è¾‘å·¥å…·(texworks)ï¼Œå°±åƒgcc4.9ã€‚å¹³è¡Œçš„æœ‰MiKTeXï¼Œä¸¤è€…åº•å±‚ä¸åŒ;ä»¥MiKTeXä¸ºåŸºç¡€çš„CTex,å°è£…äº†ç¼–è¯‘å·¥å…·ã€æµè§ˆå·¥å…·(Ghostscriptã€GSview),ç¼–è¾‘å·¥å…·ä¸º(WinEdt).
+XeLatex:texliveã€CTexä¸­çš„ä¼—å¤šç¼–è¯‘å·¥å…·ä¹‹ä¸€ï¼Œç›´æ¥æ”¯æŒUnicodeç¼–ç ï¼Œä¸ç”¨é…ç½®å­—ä½“ï¼Œä¸­æ–‡æ¸…æ™°
 
 ```
-texµÄ·â×°  ±àÒë¹¤¾ß  ÌØµã 
+texçš„å°è£…  ç¼–è¯‘å·¥å…·  ç‰¹ç‚¹ 
 --------- ---------  -------------------------------------------------------------------------------
-XeTex     XeLatex    Ö§³ÖUnicode±àÂëºÍÖ±½Ó·ÃÎÊ²Ù×÷ÏµÍ³×ÖÌå,Ö§³Öeps£¬Éú´æpdf
-LaTex     PDFLatex   °ÑTeX ÓïÑÔĞ´µÄ´úÂëÖ±½Ó±àÒë³É PDFÎÄ¼ş,²»¾­¹ıdvi,psÖĞ¼ä¹ı³Ì,Ö§³Öjpg,png£¬²»Ö§³Öeps
-LaTex     Latex      dvi->ps->pdf,²»Ö§³Öjpg,png£¬Ö§³Öeps
+XeTex     XeLatex    æ”¯æŒUnicodeç¼–ç å’Œç›´æ¥è®¿é—®æ“ä½œç³»ç»Ÿå­—ä½“,æ”¯æŒepsï¼Œç”Ÿå­˜pdf
+LaTex     PDFLatex   æŠŠTeX è¯­è¨€å†™çš„ä»£ç ç›´æ¥ç¼–è¯‘æˆ PDFæ–‡ä»¶,ä¸ç»è¿‡dvi,psä¸­é—´è¿‡ç¨‹,æ”¯æŒjpg,pngï¼Œä¸æ”¯æŒeps
+LaTex     Latex      dvi->ps->pdf,ä¸æ”¯æŒjpg,pngï¼Œæ”¯æŒeps
 ```
 
-gvim:vimµÄwindows°æ,latexµÄ±à¼­¹¤¾ß
-latex-suite:vimµÄÖ§³Ölatex±à¼­ä¯ÀÀºÍµ÷ÓÃ±àÒë¹¤¾ßµÄ¹¦ÄÜµÄ²å¼ş£¬¿ÉÕÛµş¡¢×Ô¶¯²¹È«¡¢Ë«ÏòËÑË÷
-SumatraPDF:windowsÏÂä¯ÀÀpdfµÄ¹¤¾ß,Ö§³ÖË«ÏòËÑË÷
+gvim:vimçš„windowsç‰ˆ,latexçš„ç¼–è¾‘å·¥å…·
+latex-suite:vimçš„æ”¯æŒlatexç¼–è¾‘æµè§ˆå’Œè°ƒç”¨ç¼–è¯‘å·¥å…·çš„åŠŸèƒ½çš„æ’ä»¶ï¼Œå¯æŠ˜å ã€è‡ªåŠ¨è¡¥å…¨ã€åŒå‘æœç´¢
+SumatraPDF:windowsä¸‹æµè§ˆpdfçš„å·¥å…·,æ”¯æŒåŒå‘æœç´¢
 
-###Èí¼şÏÂÔØ
+###è½¯ä»¶ä¸‹è½½
 
 [texlive2014](http://bt.neu6.edu.cn/thread-1359559-1-1.html)
 [gvim7.4](http://www.vim.org/download.php)
-[latex-suite](https://github.com/vim-latex/vim-latex) ,ÄÚÈİÖ±½Ó¸´ÖÆµ½C:\Program Files (x86)\Vim\vimfilesÏÂ
+[latex-suite](https://github.com/vim-latex/vim-latex) ,å†…å®¹ç›´æ¥å¤åˆ¶åˆ°C:\Program Files (x86)\Vim\vimfilesä¸‹
 [SumatraPDF3.0](http://www.sumatrapdfreader.org/download-free-pdf-viewer.html)
-[grep](http://gnuwin32.sourceforge.net/packages/grep.htm) F9 do a completion (ref, cite, lename)ĞèÒª,±ØĞè
-[python2.7.8](https://www.python.org/downloads/release/python-278/) Ë«ÏòËÑË÷¹¦ÄÜĞèÒª,±ØĞè
+[grep](http://gnuwin32.sourceforge.net/packages/grep.htm) F9 do a completion (ref, cite, lename)éœ€è¦,å¿…éœ€
+[python2.7.8](https://www.python.org/downloads/release/python-278/) åŒå‘æœç´¢åŠŸèƒ½éœ€è¦,å¿…éœ€
 
-###Èí¼ş°²×°
-1. ¸÷ÖÖnext
-2. ÅäÖÃÂ·¾¶PATH
+###è½¯ä»¶å®‰è£…
+1. å„ç§next
+2. é…ç½®è·¯å¾„PATH
 
 ```
-ÎÒµÄµçÄÔ->ÊôĞÔ->¸ß¼¶ÏµÍ³ÉèÖÃ->»·¾³±äÁ¿->ÓÃ»§±äÁ¿»òÏµÍ³±äÁ¿->±à¼­»òĞÂ½¨PATH±äÁ¿
-ÒÀ´ÎÎªtexlive2014;grep;SumatraPDF;gsview;vim74
+æˆ‘çš„ç”µè„‘->å±æ€§->é«˜çº§ç³»ç»Ÿè®¾ç½®->ç¯å¢ƒå˜é‡->ç”¨æˆ·å˜é‡æˆ–ç³»ç»Ÿå˜é‡->ç¼–è¾‘æˆ–æ–°å»ºPATHå˜é‡
+ä¾æ¬¡ä¸ºtexlive2014;grep;SumatraPDF;gsview;vim74
 d:\texlive\2014\bin\win32;C:/Program Files (x86)/GnuWin32/bin;C:\Program Files (x86)\SumatraPDF;C:\Program Files\Ghostgum\gsview;C:\Program Files (x86)\Vim\vim74
 ```
 
-###ÅäÖÃ£»
-1. _vimrc ÖĞÌí¼Ó
+###é…ç½®ï¼›
+1. _vimrc ä¸­æ·»åŠ 
 
 ```
-""""""""""""""""gvimÏà¹Ø"""""""""""""""
+""""""""""""""""gvimç›¸å…³"""""""""""""""
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
 set guioptions-=L  "remove left-hand scroll ba
-""""""""""""""""latex-suiteÏà¹Ø"""""""""""""""
+""""""""""""""""latex-suiteç›¸å…³"""""""""""""""
 " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.
 filetype plugin on
 
@@ -70,16 +70,16 @@ filetype indent on
 " `plaintex` instead of `tex`, which results in vim-latex not being loaded.
 " The following changes the default filetype back to `tex`:
 let g:tex_flavor=`latex`
-""""""""""""""""·´ÏòËÑË÷Ïà¹Ø"""""""""""""""
+""""""""""""""""åå‘æœç´¢ç›¸å…³"""""""""""""""
 let g:Tex_DefaultTargetFormat=`pdf`
 let g:Tex_CompileRule_pdf = `pdflatex --synctex=-1 -src-specials -interaction=nonstopmode $*`
 let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\"" `
 ```
 
-2. ĞŞ¸Äftplugin/latex-suite/compiler.vim
+2. ä¿®æ”¹ftplugin/latex-suite/compiler.vim
 
-""""""""""""""""ÕıÏòËÑË÷Ïà¹Ø"""""""""""""""
-Ô­À´ÊÇ£»
+""""""""""""""""æ­£å‘æœç´¢ç›¸å…³"""""""""""""""
+åŸæ¥æ˜¯ï¼›
 ```
 " inverse search tips taken from Dimitri Antoniou`s tip and Benji Fisher`s
 " tips on vim.sf.net (vim.sf.net tip #225)
@@ -88,7 +88,7 @@ if (has(`win32`) && (viewer =~? `^ *yap\( \|$\)`))
     let execString = `silent! !start `. viewer.` -s `.line(`.`).expand(`%`).` `.mainfnameRoot
 ```
 
-ĞŞ¸ÄÎª£º
+ä¿®æ”¹ä¸ºï¼š
 
 ```
 " inverse search tips taken from Dimitri Antoniou`s tip and Benji Fisher`s
@@ -107,24 +107,24 @@ if (has(`win32`) && (viewer =~? `^ *yap\( \|$\)` || viewer =~? "^sumatrapdf"))
     endif
 ```
 
-3. XeLatexÅäÖÃ
-3.1 xelatexÔ­ÉúÌ¬½öÖ§³Öutf8±àÂë¸ñÊ½£¬ËùÒÔĞèÒª×ª»»ÎÄ¼ş±àÂë->ASCII×ªutf8
-3.2 ÎÒÓĞ×Ô¼ºµÄlatex theme .styÎÄ¼ş£¬°ÑÏÂÁĞÉèÖÃ¼ÓÈëÆäÖĞ,Ò²¿Éµ¥¶À±£´æ³É.styÎÄ¼ş
+3. XeLatexé…ç½®
+3.1 xelatexåŸç”Ÿæ€ä»…æ”¯æŒutf8ç¼–ç æ ¼å¼ï¼Œæ‰€ä»¥éœ€è¦è½¬æ¢æ–‡ä»¶ç¼–ç ->ASCIIè½¬utf8
+3.2 æˆ‘æœ‰è‡ªå·±çš„latex theme .styæ–‡ä»¶ï¼ŒæŠŠä¸‹åˆ—è®¾ç½®åŠ å…¥å…¶ä¸­,ä¹Ÿå¯å•ç‹¬ä¿å­˜æˆ.styæ–‡ä»¶
 
 ```
-\usepackage[cm-default]{fontspec} %[cm-default]Ñ¡ÏîÖ÷ÒªÓÃÀ´½â¾öÊ¹ÓÃÊıÑ§»·¾³Ê±ÊıÑ§·ûºÅ²»ÄÜÕı³£ÏÔÊ¾µÄÎÊÌâ
+\usepackage[cm-default]{fontspec} %[cm-default]é€‰é¡¹ä¸»è¦ç”¨æ¥è§£å†³ä½¿ç”¨æ•°å­¦ç¯å¢ƒæ—¶æ•°å­¦ç¬¦å·ä¸èƒ½æ­£å¸¸æ˜¾ç¤ºçš„é—®é¢˜
 \usepackage{xunicode,xltxtra}
-\defaultfontfeatures{Mapping=tex-text} %Èç¹ûÃ»ÓĞËü£¬»áÓĞÒ»Ğ© tex ÌØÊâ×Ö·ûÎŞ·¨Õı³£Ê¹ÓÃ£¬±ÈÈçÁ¬×Ö·û¡£
-% ÖĞÎÄ¶ÏĞĞ
+\defaultfontfeatures{Mapping=tex-text} %å¦‚æœæ²¡æœ‰å®ƒï¼Œä¼šæœ‰ä¸€äº› tex ç‰¹æ®Šå­—ç¬¦æ— æ³•æ­£å¸¸ä½¿ç”¨ï¼Œæ¯”å¦‚è¿å­—ç¬¦ã€‚
+% ä¸­æ–‡æ–­è¡Œ
 \XeTeXlinebreaklocale "zh"
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
-%½«ÏµÍ³×ÖÌåÃûÓ³ÉäÎªÂß¼­×ÖÌåÃû³Æ£¬Ö÷ÒªÊÇÎªÁËÎ¬»¤µÄ·½±ã
-\newcommand\fontnamehei{Î¢ÈíÑÅºÚ}
-\newcommand\fontnamesong{·ÂËÎ}
-\newcommand\fontnamekai{¿¬Ìå}
+%å°†ç³»ç»Ÿå­—ä½“åæ˜ å°„ä¸ºé€»è¾‘å­—ä½“åç§°ï¼Œä¸»è¦æ˜¯ä¸ºäº†ç»´æŠ¤çš„æ–¹ä¾¿
+\newcommand\fontnamehei{å¾®è½¯é›…é»‘}
+\newcommand\fontnamesong{ä»¿å®‹}
+\newcommand\fontnamekai{æ¥·ä½“}
 \newcommand\fontnamemono{DejaVu Sans Mono}
 \newcommand\fontnameroman{Times New Roman}
-%%ÉèÖÃ³£ÓÃÖĞÎÄ×ÖºÅ£¬·½±ãµ÷ÓÃ
+%%è®¾ç½®å¸¸ç”¨ä¸­æ–‡å­—å·ï¼Œæ–¹ä¾¿è°ƒç”¨
 \newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}
 \newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}
 \newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}
@@ -134,44 +134,44 @@ if (has(`win32`) && (viewer =~? `^ *yap\( \|$\)` || viewer =~? "^sumatrapdf"))
 \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}
 \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}
 \newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}
-%ÉèÖÃÎÄµµÕıÎÄ×ÖÌåÎªËÎÌå
+%è®¾ç½®æ–‡æ¡£æ­£æ–‡å­—ä½“ä¸ºå®‹ä½“
 \setmainfont[BoldFont=\fontnamehei]{\fontnamesong}
 \setsansfont[BoldFont=\fontnamehei]{\fontnamekai}
 \setmonofont{\fontnamemono}
-%¿¬Ìå
+%æ¥·ä½“
 \newfontinstance\KAI{\fontnamekai}
 \newcommand{\kai}[1]{{\KAI#1}}
-%ºÚÌå
+%é»‘ä½“
 \newfontinstance\HEI{\fontnamehei}
 \newcommand{\hei}[1]{{\HEI#1}}
-%Ó¢ÎÄ
+%è‹±æ–‡
 \newfontinstance\ENF{\fontnameroman}
 \newcommand{\en}[1]{\,{\ENF#1}\,}
 ```
 
-3.3 ÔÚ.texÖĞµ÷ÓÃ.sty,ÆäËûµÄ²»ÓÃÊ²Ã´ÉèÖÃ
+3.3 åœ¨.texä¸­è°ƒç”¨.sty,å…¶ä»–çš„ä¸ç”¨ä»€ä¹ˆè®¾ç½®
 
 ```
 \usepackage{ldjtheme}
 ```
 
-###Ê¹ÓÃ£ºvim±à¼­¡¢±àÒë
+###ä½¿ç”¨ï¼švimç¼–è¾‘ã€ç¼–è¯‘
 
-\ll£ºcompile
-\lv£ºview pdf
-\ls: ÕıÏòËÑË÷
-SumatraPDF ÖĞË«»÷: ·´ÏòËÑË÷
-Ctrl-J£º Ìøµ½ÏÂÒ»¸ö++Î»ÖÃ£¨place holder£©
-F5£ºinsert/wrap in environment
-F9£ºdo a completion (ref, cite, lename)
-za£ºfold/unfold
-\rf£ºrefresh folding
+\llï¼šcompile
+\lvï¼šview pdf
+\ls: æ­£å‘æœç´¢
+SumatraPDF ä¸­åŒå‡»: åå‘æœç´¢
+Ctrl-Jï¼š è·³åˆ°ä¸‹ä¸€ä¸ª++ä½ç½®ï¼ˆplace holderï¼‰
+F5ï¼šinsert/wrap in environment
+F9ï¼šdo a completion (ref, cite, lename)
+zaï¼šfold/unfold
+\rfï¼šrefresh folding
 
-###²Î¿¼×ÊÁÏ
+###å‚è€ƒèµ„æ–™
 1. [utf8+xelatex ](http://blog.163.com/xie_qiuliang/blog/static/1810885002011387313105/)
-2. [LaTeX¼¼ÇÉ9£ºVIM+LaTexSuiteÅäÖÃ ](http://blog.sina.com.cn/s/blog_5e16f1770100fqyt.html)
-3. [Ê¹ÓÃvim-latex£¨latex-suite£©²å¼ş](http://fightfxj.blog.163.com/blog/static/676839242013424103223400/)
-4. [LaTeXÊ¹ÓÃ--XeLaTeXÈëÃÅ»ù´¡£¨¶ş£©](http://blog.csdn.net/geekcome/article/details/7618527)
-5. [GVim + LaTeX-Suite + SumatraPDF Õı·´ÏòËÑË÷½â¾ö·½°¸ ](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74881)
+2. [LaTeXæŠ€å·§9ï¼šVIM+LaTexSuiteé…ç½® ](http://blog.sina.com.cn/s/blog_5e16f1770100fqyt.html)
+3. [ä½¿ç”¨vim-latexï¼ˆlatex-suiteï¼‰æ’ä»¶](http://fightfxj.blog.163.com/blog/static/676839242013424103223400/)
+4. [LaTeXä½¿ç”¨--XeLaTeXå…¥é—¨åŸºç¡€ï¼ˆäºŒï¼‰](http://blog.csdn.net/geekcome/article/details/7618527)
+5. [GVim + LaTeX-Suite + SumatraPDF æ­£åå‘æœç´¢è§£å†³æ–¹æ¡ˆ ](http://bbs.ctex.org/forum.php?mod=viewthread&tid=74881)
 6. [latex-suite User Manual](http://vim-latex.sourceforge.net/index.php?subject=manual&title=Manual#user-manual)
-7. [CTex¹Ù·½Ö÷Ò³](http://www.ctex.org/CTeX)
+7. [CTexå®˜æ–¹ä¸»é¡µ](http://www.ctex.org/CTeX)
