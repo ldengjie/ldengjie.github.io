@@ -103,6 +103,7 @@ SumatraPDF:windows下浏览pdf的工具,支持双向搜索
 3.1 xelatex原生态仅支持utf8编码格式，所以需要转换文件编码->ASCII转utf8  
 3.2 我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件  
   
+```
     \usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
     \usepackage{xunicode,xltxtra}  
     \defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。  
@@ -138,6 +139,7 @@ SumatraPDF:windows下浏览pdf的工具,支持双向搜索
     %英文  
     \newfontinstance\ENF{\fontnameroman}  
     \newcommand{\en}[1]{\,{\ENF#1}\,}  
+```
   
 3.3 在.tex中调用.sty,其他的不用什么设置  
   
