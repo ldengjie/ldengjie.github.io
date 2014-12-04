@@ -104,7 +104,7 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
   
 3.XeLatex配置  
 3.1xelatex原生态仅支持utf8编码格式，所以需要转换文件编码->ASCII转utf8  
-3.2我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件,也可直接加到.tex文件中,"[DejaVu Sans Mono](http://dejavu-fonts.org/wiki/Download)"需要自己下载安装，这里也可替换其他已有字体  
+3.2我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件,也可直接加到.tex文件中,"[DejaVu Sans Mono字体](http://dejavu-fonts.org/wiki/Download)"需要自己下载安装，这里也可替换其他已有字体  
   
 ```
 \usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
