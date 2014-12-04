@@ -16,9 +16,9 @@ category: blog
 >|LaTex              | PDFLatex       |  把TeX 语言写的代码直接编译成 PDF文件,不经过dvi,ps中间过程,支持jpg,png，不支持eps  |  
 >|LaTex              | Latex          |  dvi->ps->pdf,不支持jpg,png，支持eps  |  
   
-**gvim**  vim的windows版,latex的编辑工具  
-**latex-suite**  vim的支持latex编辑浏览和调用编译工具的功能的插件，可折叠、自动补全、双向搜索  
-**SumatraPDF**  windows下浏览pdf的工具,支持双向搜索  
+**gvim**  vim的windows版,可用作latex的编辑工具  
+**latex-suite**  vim的支持`latex编辑浏览和调用编译工具`的功能的插件，可折叠、自动补全、双向搜索  
+**SumatraPDF**  windows下浏览pdf的工具,支持双向搜索,可打开时编辑生成pdf  
   
 ###软件下载  
   
