@@ -38,10 +38,10 @@ category: blog
 >d:\texlive\2014\bin\win32;C:/Program Files (x86)/GnuWin32/bin;C:\Program Files (x86)\SumatraPDF;C:\Program Files\Ghostgum\gsview;C:\Program Files (x86)\Vim\vim74  
   
 ###配置；  
-1. _vimrc 中添加  
+1._vimrc 中添加  
   
 ```
-""""""""""""""""gvim相关"""""""""""""""  
+""""""""""""""""gvim相关,个人习惯简洁"""""""""""""""  
 set guioptions-=m  "remove menu bar  
 set guioptions-=T  "remove toolbar  
 set guioptions-=r  "remove right-hand scroll bar  
@@ -72,7 +72,7 @@ let g:Tex_CompileRule_pdf = `pdflatex --synctex=-1 -src-specials -interaction=no
 let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\"" `  
 ```
   
-2. 修改ftplugin/latex-suite/compiler.vim,正向搜索相关
+2.修改ftplugin/latex-suite/compiler.vim,正向搜索相关
   
 原来是；  
   
@@ -99,9 +99,9 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
                             \ Tex_GetMainFileName(`:p:gs?/?\\?`).`" `. line(`.`)  
         endif  
   
-3. XeLatex配置  
-3.1 xelatex原生态仅支持utf8编码格式，所以需要转换文件编码->ASCII转utf8  
-3.2 我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件  
+3.XeLatex配置  
+3.1xelatex原生态仅支持utf8编码格式，所以需要转换文件编码->ASCII转utf8  
+3.2我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件  
   
 ```
 \usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
@@ -141,7 +141,7 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
 \newcommand{\en}[1]{\,{\ENF#1}\,}  
 ```
   
-3.3 在.tex中调用.sty,其他的不用什么设置  
+3.3在.tex中调用.sty,其他的不用什么设置  
   
     \usepackage{ldjtheme}  
   
