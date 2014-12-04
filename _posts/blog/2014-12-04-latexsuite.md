@@ -74,7 +74,7 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
   
 2.修改ftplugin/latex-suite/compiler.vim,正向搜索相关
   
-原来是；  
+原来是:  
   
     " inverse search tips taken from Dimitri Antoniou`s tip and Benji Fisher`s  
     " tips on vim.sf.net (vim.sf.net tip #225)  
@@ -101,7 +101,7 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
   
 3.XeLatex配置  
 3.1xelatex原生态仅支持utf8编码格式，所以需要转换文件编码->ASCII转utf8  
-3.2我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件  
+3.2我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件,也可直接加到.tex文件中  
   
 ```
 \usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
