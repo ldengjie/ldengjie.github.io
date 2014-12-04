@@ -35,6 +35,7 @@ category: blog
   
 >我的电脑->属性->高级系统设置->环境变量->用户变量或系统变量->编辑或新建PATH变量  
 >依次为texlive2014;grep;sumatrapdf;gsview;vim74  
+
 >```
 >d:\texlive\2014\bin\win32;C:/Program Files (x86)/GnuWin32/bin;C:\Program Files (x86)\SumatraPDF;C:\Program Files\Ghostgum\gsview;C:\Program Files (x86)\Vim\vim74  
 >```
