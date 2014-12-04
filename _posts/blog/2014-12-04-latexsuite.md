@@ -10,11 +10,11 @@ category: blog
 **texlive**  tex的编译系统，包含编译所用的工具、浏览工具(Ghostscript、GSview)和编辑工具(texworks)，就像gcc4.9。平行的有MiKTeX，两者底层不同;以MiKTeX为基础的CTex,封装了编译工具、浏览工具(Ghostscript、GSview),编辑工具为(WinEdt).  
 **XeLatex**  texlive、CTex中的众多编译工具之一，直接支持Unicode编码，不用配置字体，中文清晰  
   
->|tex的高级版语言    |    编译工具    |     特点   
->|------------------ | -------------- |  -------------------------------------------------------------------------------  
->|XeTex              | XeLatex        |  支持Unicode编码和直接访问操作系统字体,支持eps，生存pdf  
->|LaTex              | PDFLatex       |  把TeX 语言写的代码直接编译成 PDF文件,不经过dvi,ps中间过程,支持jpg,png，不支持eps  
->|LaTex              | Latex          |  dvi->ps->pdf,不支持jpg,png，支持eps  
+>|tex的高级版语言    |    编译工具    |     特点   |  
+>|------------------ | -------------- |  -------------------------------------------------------------------------------  |  
+>|XeTex              | XeLatex        |  支持Unicode编码和直接访问操作系统字体,支持eps，生存pdf  |  
+>|LaTex              | PDFLatex       |  把TeX 语言写的代码直接编译成 PDF文件,不经过dvi,ps中间过程,支持jpg,png，不支持eps  |  
+>|LaTex              | Latex          |  dvi->ps->pdf,不支持jpg,png，支持eps  |  
   
 **gvim**  vim的windows版,latex的编辑工具  
 **latex-suite**  vim的支持latex编辑浏览和调用编译工具的功能的插件，可折叠、自动补全、双向搜索  
