@@ -150,7 +150,7 @@ let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \"
 \ll：compile  
 \lv：view pdf  
 \ls: 正向搜索  
-SumatraPDF 中双击: 反向搜索  
+SumatraPDF中 双击: 反向搜索  
 Ctrl-J： 跳到下一个++位置（place holder）  
 F5：insert/wrap in environment  
 F9：do a completion (ref, cite, lename)  
