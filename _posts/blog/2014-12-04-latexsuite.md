@@ -40,39 +40,39 @@ SumatraPDF:windows下浏览pdf的工具,支持双向搜索
 ###配置；  
 1. _vimrc 中添加  
   
-    """"""""""""""""gvim相关"""""""""""""""  
-    set guioptions-=m  "remove menu bar  
-    set guioptions-=T  "remove toolbar  
-    set guioptions-=r  "remove right-hand scroll bar  
-    set guioptions-=L  "remove left-hand scroll ba  
-    """"""""""""""""latex-suite相关"""""""""""""""  
-    " REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.  
-    filetype plugin on  
-      
-    " IMPORTANT: win32 users will need to have `shellslash` set so that latex  
-    " can be called correctly.  
-    set shellslash  
-      
-    " IMPORTANT: grep will sometimes skip displaying the file name if you  
-    " search in a singe file. This will confuse Latex-Suite. Set your grep  
-    " program to always generate a file-name.  
-    set grepprg=grep\ -nH\ $*  
-      
-    " OPTIONAL: This enables automatic indentation as you type.  
-    filetype indent on  
-      
-    " OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to  
-    " `plaintex` instead of `tex`, which results in vim-latex not being loaded.  
-    " The following changes the default filetype back to `tex`:  
-    let g:tex_flavor=`latex`  
-    """"""""""""""""反向搜索相关"""""""""""""""  
-    let g:Tex_DefaultTargetFormat=`pdf`  
-    let g:Tex_CompileRule_pdf = `pdflatex --synctex=-1 -src-specials -interaction=nonstopmode $*`  
-    let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\"" `  
+```
+""""""""""""""""gvim相关"""""""""""""""  
+set guioptions-=m  "remove menu bar  
+set guioptions-=T  "remove toolbar  
+set guioptions-=r  "remove right-hand scroll bar  
+set guioptions-=L  "remove left-hand scroll ba  
+""""""""""""""""latex-suite相关"""""""""""""""  
+" REQUIRED. This makes vim invoke Latex-Suite when you open a tex file.  
+filetype plugin on  
   
-2. 修改ftplugin/latex-suite/compiler.vim  
+" IMPORTANT: win32 users will need to have `shellslash` set so that latex  
+" can be called correctly.  
+set shellslash  
   
-""""""""""""""""正向搜索相关"""""""""""""""  
+" IMPORTANT: grep will sometimes skip displaying the file name if you  
+" search in a singe file. This will confuse Latex-Suite. Set your grep  
+" program to always generate a file-name.  
+set grepprg=grep\ -nH\ $*  
+  
+" OPTIONAL: This enables automatic indentation as you type.  
+filetype indent on  
+  
+" OPTIONAL: Starting with Vim 7, the filetype of empty .tex files defaults to  
+" `plaintex` instead of `tex`, which results in vim-latex not being loaded.  
+" The following changes the default filetype back to `tex`:  
+let g:tex_flavor=`latex`  
+""""""""""""""""反向搜索相关"""""""""""""""  
+let g:Tex_DefaultTargetFormat=`pdf`  
+let g:Tex_CompileRule_pdf = `pdflatex --synctex=-1 -src-specials -interaction=nonstopmode $*`  
+let g:Tex_ViewRule_pdf = `sumatrapdf -reuse-instance -inverse-search "gvim -c \":RemoteOpen +\%l \%f\"" `  
+```
+  
+2. 修改ftplugin/latex-suite/compiler.vim,正向搜索相关
   
 原来是；  
   
@@ -104,41 +104,41 @@ SumatraPDF:windows下浏览pdf的工具,支持双向搜索
 3.2 我有自己的latex theme .sty文件，把下列设置加入其中,也可单独保存成.sty文件  
   
 ```
-    \usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
-    \usepackage{xunicode,xltxtra}  
-    \defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。  
-    % 中文断行  
-    \XeTeXlinebreaklocale "zh"  
-    \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  
-    %将系统字体名映射为逻辑字体名称，主要是为了维护的方便  
-    \newcommand\fontnamehei{微软雅黑}  
-    \newcommand\fontnamesong{仿宋}  
-    \newcommand\fontnamekai{楷体}  
-    \newcommand\fontnamemono{DejaVu Sans Mono}  
-    \newcommand\fontnameroman{Times New Roman}  
-    %%设置常用中文字号，方便调用  
-    \newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}  
-    \newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  
-    \newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}  
-    \newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}  
-    \newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}  
-    \newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  
-    \newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}  
-    \newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}  
-    \newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}  
-    %设置文档正文字体为宋体  
-    \setmainfont[BoldFont=\fontnamehei]{\fontnamesong}  
-    \setsansfont[BoldFont=\fontnamehei]{\fontnamekai}  
-    \setmonofont{\fontnamemono}  
-    %楷体  
-    \newfontinstance\KAI{\fontnamekai}  
-    \newcommand{\kai}[1]{{\KAI#1}}  
-    %黑体  
-    \newfontinstance\HEI{\fontnamehei}  
-    \newcommand{\hei}[1]{{\HEI#1}}  
-    %英文  
-    \newfontinstance\ENF{\fontnameroman}  
-    \newcommand{\en}[1]{\,{\ENF#1}\,}  
+\usepackage[cm-default]{fontspec} %[cm-default]选项主要用来解决使用数学环境时数学符号不能正常显示的问题  
+\usepackage{xunicode,xltxtra}  
+\defaultfontfeatures{Mapping=tex-text} %如果没有它，会有一些 tex 特殊字符无法正常使用，比如连字符。  
+% 中文断行  
+\XeTeXlinebreaklocale "zh"  
+\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt  
+%将系统字体名映射为逻辑字体名称，主要是为了维护的方便  
+\newcommand\fontnamehei{微软雅黑}  
+\newcommand\fontnamesong{仿宋}  
+\newcommand\fontnamekai{楷体}  
+\newcommand\fontnamemono{DejaVu Sans Mono}  
+\newcommand\fontnameroman{Times New Roman}  
+%%设置常用中文字号，方便调用  
+\newcommand{\erhao}{\fontsize{22pt}{\baselineskip}\selectfont}  
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}  
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont}  
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}  
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}  
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}  
+\newcommand{\liuhao}{\fontsize{7.5pt}{\baselineskip}\selectfont}  
+%设置文档正文字体为宋体  
+\setmainfont[BoldFont=\fontnamehei]{\fontnamesong}  
+\setsansfont[BoldFont=\fontnamehei]{\fontnamekai}  
+\setmonofont{\fontnamemono}  
+%楷体  
+\newfontinstance\KAI{\fontnamekai}  
+\newcommand{\kai}[1]{{\KAI#1}}  
+%黑体  
+\newfontinstance\HEI{\fontnamehei}  
+\newcommand{\hei}[1]{{\HEI#1}}  
+%英文  
+\newfontinstance\ENF{\fontnameroman}  
+\newcommand{\en}[1]{\,{\ENF#1}\,}  
 ```
   
 3.3 在.tex中调用.sty,其他的不用什么设置  
