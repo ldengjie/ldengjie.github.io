@@ -1,6 +1,6 @@
 ---  
 layout: post  
-title: win8+texlive2014+XeLatex+gvim+latexsuite+SumatraPDF  
+title: win8 : texlive2014+XeLatex+gvim+latexsuite+SumatraPDF  
 description: 在新win8系统上用vim编辑编译latex,支持中文，双向搜索  
 category: blog   
 ---  
