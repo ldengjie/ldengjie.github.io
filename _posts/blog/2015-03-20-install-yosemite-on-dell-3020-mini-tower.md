@@ -1,38 +1,39 @@
 ---
 layout: post
-title: °²×°ºÚÆ»¹ûµ½DELL 3020 MT Ì¨Ê½»ú
-description: EFI+GPT+CLOVER+YosemiteÔ­°æ
+title: å®‰è£…é»‘è‹¹æœåˆ°DELL 3020 MT å°å¼æœº
+description: EFI+GPT+CLOVER+YosemiteåŸç‰ˆ
 category: blog 
 ---
 
-Ó²¼şĞÅÏ¢£ºÌ¨Ê½»ú
-µçÄÔĞÍºÅ    ´÷¶û OptiPlex 3020 Mini Tower
-²Ù×÷ÏµÍ³    Windows XP ×¨Òµ°æ 32Î» SP3 ( DirectX 9.0c )
-´¦ÀíÆ÷  Ó¢ÌØ¶û Core i5-4570 @ 3.20GHz ËÄºË
-Ö÷°å    ´÷¶û 040DDP (Ó¢ÌØ¶û Haswell)
-ÄÚ´æ    4 GB ( º£Á¦Ê¿ DDR3 1600MHz )
-Ö÷Ó²ÅÌ  Ï£½İ ST500DM002-1BD142 ( 500 GB / 7200 ×ª/·Ö )
-ÏÔ¿¨    ATI Radeon HD 8490 
-ÏÔÊ¾Æ÷  ´÷¶û DELF05F DELL E2215HV ( 21.7 Ó¢´ç )
-¹âÇı    ÈÕÁ¢-LG DVD+-RW GHB0N DVD¿ÌÂ¼»ú
-Éù¿¨    ÈğêÅ ALC280 @ Ó¢ÌØ¶û Haswell ¸ß±£ÕæÒôÆµ
-Íø¿¨    ÈğêÅ RTL8168/8111/8112 Gigabit Ethernet Controller / ´÷¶û
+ç¡¬ä»¶ä¿¡æ¯ï¼šå°å¼æœº
+ç”µè„‘å‹å·    æˆ´å°” OptiPlex 3020 Mini Tower
+æ“ä½œç³»ç»Ÿ    Windows XP ä¸“ä¸šç‰ˆ 32ä½ SP3 ( DirectX 9.0c )
+å¤„ç†å™¨  è‹±ç‰¹å°” Core i5-4570 @ 3.20GHz å››æ ¸
+ä¸»æ¿    æˆ´å°” 040DDP (è‹±ç‰¹å°” Haswell)
+å†…å­˜    4 GB ( æµ·åŠ›å£« DDR3 1600MHz )
+ä¸»ç¡¬ç›˜  å¸Œæ· ST500DM002-1BD142 ( 500 GB / 7200 è½¬/åˆ† )
+æ˜¾å¡    ATI Radeon HD 8490 
+æ˜¾ç¤ºå™¨  æˆ´å°” DELF05F DELL E2215HV ( 21.7 è‹±å¯¸ )
+å…‰é©±    æ—¥ç«‹-LG DVD+-RW GHB0N DVDåˆ»å½•æœº
+å£°å¡    ç‘æ˜± ALC280 @ è‹±ç‰¹å°” Haswell é«˜ä¿çœŸéŸ³é¢‘
+ç½‘å¡    ç‘æ˜± RTL8168/8111/8112 Gigabit Ethernet Controller / æˆ´å°”
 
-°²×°·½·¨£º
-efi+gpt+clover+10.10.2Ô­°æ
+å®‰è£…æ–¹æ³•ï¼š
+efi+gpt+clover+10.10.2åŸç‰ˆ
 
-°²×°¹ı³Ì£º
+å®‰è£…è¿‡ç¨‹ï¼š
 
-SSD¹ÌÌ¬Ó²ÅÌ(ÔÚSATA0¿Ú)+»úĞµÓ²ÅÌ(ÔÚSATA1¿Ú)£¬È«ÅÌ°²×°²»´æÔÚË«ÏµÍ³
+SSDå›ºæ€ç¡¬ç›˜(åœ¨SATA0å£)+æœºæ¢°ç¡¬ç›˜(åœ¨SATA1å£)ï¼Œå…¨ç›˜å®‰è£…ä¸å­˜åœ¨åŒç³»ç»Ÿ
 
-°ÎµôATI Radeon HD 8490£¨DVI+DP£©£¬Ôø³¢ÊÔÁËDSDT+FB£¬µ«Çı¶¯²»ÁËDVI×ªVGAºÍDP×ªVGA¡£
+æ‹”æ‰ATI Radeon HD 8490ï¼ˆDVI+DPï¼‰ï¼Œæ›¾å°è¯•äº†DSDT+FBï¼Œä½†é©±åŠ¨ä¸äº†DVIè½¬VGAå’ŒDPè½¬VGAã€‚
 
-Çı¶¯ºËÏÔHD4600£¨VGA+DP£©£¬²»ÄÜÓÃVGA½Ó¿Ú£¬Ö»ÄÜÓÃDP×ªVGA¡£
+é©±åŠ¨æ ¸æ˜¾HD4600ï¼ˆVGA+DPï¼‰ï¼Œä¸èƒ½ç”¨VGAæ¥å£ï¼Œåªèƒ½ç”¨DPè½¬VGAã€‚
 
-0.ÖÆ×÷UÅÌÒıµ¼ÅÌ+°²×°ÅÌ£¨OS XÏÂÖÆ×÷£©
-0.1 ·ÖÇø £¬´óÓÚ2GÊ±£¬
-0.1.1·ÖÒ»¸ö·ÖÇø(ÆäÊµÉú³ÉÁ½¸ö·ÖÇø£¬µÚÒ»¸öÎªEFI·ÖÇø£¬µÚ¶ş¸öÎªÕâÀïÉèÖÃµÄ·ÖÇø)£º¸ñÊ½Mac OS Extended(Journaled)
-0.1.2·ÖÈı¸ö·ÖÇø£¬1:FAT32 200M 2:Mac OS Extended(Journaled) 7GB 3:exFat ÓàÏÂµÄ¿Õ¼ä
+0.åˆ¶ä½œUç›˜å¼•å¯¼ç›˜+å®‰è£…ç›˜ï¼ˆOS Xä¸‹åˆ¶ä½œï¼‰
+0.1 åˆ†åŒº ï¼Œå¤§äº2Gæ—¶ï¼Œ
+0.1.1åˆ†ä¸€ä¸ªåˆ†åŒº(å…¶å®ç”Ÿæˆä¸¤ä¸ªåˆ†åŒºï¼Œç¬¬ä¸€ä¸ªä¸ºEFIåˆ†åŒºï¼Œç¬¬äºŒä¸ªä¸ºè¿™é‡Œè®¾ç½®çš„åˆ†åŒº)ï¼šæ ¼å¼Mac OS Extended(Journaled)
+0.1.2åˆ†ä¸‰ä¸ªåˆ†åŒºï¼Œ1:FAT32 200M 2:Mac OS Extended(Journaled) 7GB 3:exFat ä½™ä¸‹çš„ç©ºé—´
+
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_0.png)
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_1.png)
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_2.png)
@@ -40,21 +41,21 @@ SSD¹ÌÌ¬Ó²ÅÌ(ÔÚSATA0¿Ú)+»úĞµÓ²ÅÌ(ÔÚSATA1¿Ú)£¬È«ÅÌ°²×°²»´æÔÚË«ÏµÍ³
 
 
 
-0.2 Ğ´Èë10.10.app£¬
-sudo 10.10.app/Contents/Resources/createinstallmedia --volume UÅÌÎ»ÖÃ --applicationpath 10.10.app --no interaction
-ÀıÈç£º
+0.2 å†™å…¥10.10.appï¼Œ
+sudo 10.10.app/Contents/Resources/createinstallmedia --volume Uç›˜ä½ç½® --applicationpath 10.10.app --no interaction
+ä¾‹å¦‚ï¼š
 sudo /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/OSU/ --applicationpath /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app --no interaction
 
 
 
-0.3 clover °²×°µ½UÅÌ(Ñ¡ÔñUÅÌ£¬ÆäÊµÊÇ°²×°µ½UÅÌµÄEFI·ÖÇø)
-ÏÂÔØ http://sourceforge.net/projects/cloverefiboot/
-0.3.1·ÖÒ»¸ö·ÖÇøÊ±£º
-¸ñÊ½»¯EFI ÎªFAT32F·ÖÇø £¬·ñÔòclover configer ¿´²»µ½
+0.3 clover å®‰è£…åˆ°Uç›˜(é€‰æ‹©Uç›˜ï¼Œå…¶å®æ˜¯å®‰è£…åˆ°Uç›˜çš„EFIåˆ†åŒº)
+ä¸‹è½½ http://sourceforge.net/projects/cloverefiboot/
+0.3.1åˆ†ä¸€ä¸ªåˆ†åŒºæ—¶ï¼š
+æ ¼å¼åŒ–EFI ä¸ºFAT32Fåˆ†åŒº ï¼Œå¦åˆ™clover configer çœ‹ä¸åˆ°
 $ diskutil list
 $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk3s1
-Èı¸ö·ÖÇøÊ±£¬Ö±½Ó°²×°Ñ¡Ôñ200MµÄFAT·ÖÇø¡£
-0.3.2°²×°ÎªEFIÄ£Ê½
+ä¸‰ä¸ªåˆ†åŒºæ—¶ï¼Œç›´æ¥å®‰è£…é€‰æ‹©200Mçš„FATåˆ†åŒºã€‚
+0.3.2å®‰è£…ä¸ºEFIæ¨¡å¼
 
 
 
@@ -63,57 +64,55 @@ $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk3s1
 
 
 
-0.3.3 clover ÅäÖÃ
+0.3.3 clover é…ç½®
 
-Ê×ÏÈÄ¬ÈÏÑ¡ÏîÈ«²¿Çå¿Õ£¬ÓÈÆäÊÇinjectATI INTEL NV,È»ºó drivers64UEFI/ÖĞ¼ÓÈëHFSPlus.efi ,É¾³ıVBoxHfs-64.efi.//·ñÔòÎå¹ú£ºAppleACPIPlatform + IOPCIFamily ´íÎó¡£
+é¦–å…ˆé»˜è®¤é€‰é¡¹å…¨éƒ¨æ¸…ç©ºï¼Œå°¤å…¶æ˜¯injectATI INTEL NV,ç„¶å drivers64UEFI/ä¸­åŠ å…¥HFSPlus.efi ,åˆ é™¤VBoxHfs-64.efi.//å¦åˆ™äº”å›½ï¼šAppleACPIPlatform + IOPCIFamily é”™è¯¯ã€‚
 
-¼ÓÈëFakeSMC.kext
+åŠ å…¥FakeSMC.kext
 
-³ıÁË£¬ 
+é™¤äº†ï¼Œ 
 Boot:  kext-dev-mode=1 
-System Parameters:Inject Kexts=yes //·ñÔòkexts/10.10/ÏÂµÄÇı¶¯²»¼ÓÔØ£¬°üÀ¨FakeSMC.kext..
-Devices:USB Inject=yes FixOwnership=yes //·ñÔòÎå¹ú waitting on <dict ID="0">....
+System Parameters:Inject Kexts=yes //å¦åˆ™kexts/10.10/ä¸‹çš„é©±åŠ¨ä¸åŠ è½½ï¼ŒåŒ…æ‹¬FakeSMC.kext..
+Devices:USB Inject=yes FixOwnership=yes //å¦åˆ™äº”å›½ waitting on <dict ID="0">....
 
-²Î¼ûhttp://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
+å‚è§http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html
 
-1.°²×°ÏµÍ³
-1.0 ×ª»¯Ó²ÅÌ´ÓMBRµ½GPT£¨ĞÂÂòµÄINTEL SSD Ã»ÓĞ×ª»¯£¬µ«³É¹¦ÁË£¬¿ÉÄÜÄ¬ÈÏÎªGPT£©.
+1.å®‰è£…ç³»ç»Ÿ
+1.0 è½¬åŒ–ç¡¬ç›˜ä»MBRåˆ°GPTï¼ˆæ–°ä¹°çš„INTEL SSD æ²¡æœ‰è½¬åŒ–ï¼Œä½†æˆåŠŸäº†ï¼Œå¯èƒ½é»˜è®¤ä¸ºGPTï¼‰.
 
-1.1 °²×°Ê±BIOSÉèÖÃ
-Ó²ÅÌAHCIÄ£Ê½£¬²»ĞèÒª¹Ø±ÕUSB3.0
+1.1 å®‰è£…æ—¶BIOSè®¾ç½®
+ç¡¬ç›˜AHCIæ¨¡å¼ï¼Œä¸éœ€è¦å…³é—­USB3.0
 EFI+GPT
 
-1.2 ÅÅ³ıÎå¹ú
-Ã»ÓĞÎå¹ú
-1.3 °²×°ÏµÍ³
-Ñ¡ÔñÓïÑÔ->´ÅÅÌ¹¤¾ß->°²×°µ½SSD¡£¡£¡£´ó¸ÅÊ®¼¸·ÖÖÓ
-ÖØÆôÒ»´Î£¬UÅÌÆô¶¯£¬Ñ¡Ôñ"Install ..."¼ÌĞø£¬Ê®·ÖÖÓ×óÓÒ
-ÖØÆô£¬Ñ¡Ôñ SSDÓ²ÅÌ ½øÈëÏµÍ³ÅäÖÃ
+1.2 æ’é™¤äº”å›½
+æ²¡æœ‰äº”å›½
+1.3 å®‰è£…ç³»ç»Ÿ
+é€‰æ‹©è¯­è¨€->ç£ç›˜å·¥å…·->å®‰è£…åˆ°SSDã€‚ã€‚ã€‚å¤§æ¦‚åå‡ åˆ†é’Ÿ
+é‡å¯ä¸€æ¬¡ï¼ŒUç›˜å¯åŠ¨ï¼Œé€‰æ‹©"Install ..."ç»§ç»­ï¼Œååˆ†é’Ÿå·¦å³
+é‡å¯ï¼Œé€‰æ‹© SSDç¡¬ç›˜ è¿›å…¥ç³»ç»Ÿé…ç½®
 
 
-1.4 °²×°cloverµ½Ó²ÅÌEFI·ÖÇø£¬ÉèÖÃÆô¶¯ÎªEFI+GPT
-×ª»¯EFI·ÖÇøÎªFAT32¸ñÊ½£¬ÒÔ±ãÒÔºó°²×°MAC+WINDOWSË«ÏµÍ³,
+1.4 å®‰è£…cloveråˆ°ç¡¬ç›˜EFIåˆ†åŒºï¼Œè®¾ç½®å¯åŠ¨ä¸ºEFI+GPT
+è½¬åŒ–EFIåˆ†åŒºä¸ºFAT32æ ¼å¼ï¼Œä»¥ä¾¿ä»¥åå®‰è£…MAC+WINDOWSåŒç³»ç»Ÿ,
 $ diskutil list
 $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk0s1
 
 Boot: -v kext-dev-mode=1 
-Devices:USB Inject=yes FixOwnership=yes£¨?£©
-¿½ÈëFakeSMC.kext 
+Devices:USB Inject=yes FixOwnership=yesï¼ˆ?ï¼‰
+æ‹·å…¥FakeSMC.kext 
 
-2.°²×°Çı¶¯
-2.1ÏÔ¿¨
-Graphics:Inject Intel=yes,ig-platform-id=0x0d220003//(Çı¶¯HD4600)
-Ingect EDID =yes£¬Custom EDID=....//£¨Ê¶±ğÏÔÊ¾Æ÷)
-2.1.1 ÔõÃ´µÃµ½EDID£¿
-ÎÒÊÇÁ´½Óµ½°×Æ»¹ûÉÏ£¬ÓÃSwitchResXµÃµ½µÄ
-2.2Éù¿¨
-°²×°VoodooHDA.pmg ,¿ª»úÓĞµçÁ÷Òô£¬ĞŞ¸ÄkextÀïinfo.listÖĞµÄiGain=0,iMix=90
-2.3Íø¿¨
-RealtekRTL8111.kextµ½kexts/10.10
-2.4 ¼ÓÔØÇı¶¯£¬ĞèÒªcloverÉèÖÃ
-System Parameters:Inject Kexts=yes £¬No Caches=yes
-
-
+2.å®‰è£…é©±åŠ¨
+2.1æ˜¾å¡
+Graphics:Inject Intel=yes,ig-platform-id=0x0d220003//(é©±åŠ¨HD4600)
+Ingect EDID =yesï¼ŒCustom EDID=....//ï¼ˆè¯†åˆ«æ˜¾ç¤ºå™¨)
+2.1.1 æ€ä¹ˆå¾—åˆ°EDIDï¼Ÿ
+æˆ‘æ˜¯é“¾æ¥åˆ°ç™½è‹¹æœä¸Šï¼Œç”¨SwitchResXå¾—åˆ°çš„
+2.2å£°å¡
+å®‰è£…VoodooHDA.pmg ,å¼€æœºæœ‰ç”µæµéŸ³ï¼Œä¿®æ”¹kexté‡Œinfo.listä¸­çš„iGain=0,iMix=90
+2.3ç½‘å¡
+RealtekRTL8111.kextåˆ°kexts/10.10
+2.4 åŠ è½½é©±åŠ¨ï¼Œéœ€è¦cloverè®¾ç½®
+System Parameters:Inject Kexts=yes ï¼ŒNo Caches=yes
 
 
 
@@ -122,11 +121,13 @@ System Parameters:Inject Kexts=yes £¬No Caches=yes
 
 
 
-3.ÆäËû
-3.1½µÆµ£¿
-²»ĞèÒª,×Ô¶¯µ÷Æµ
 
-4.  ÒÆ¶¯¶àÃ½ÌåÀàµÄÎÄ¼ş¼Ğµ½µÚ¶ş¸öÓ²ÅÌ
+
+3.å…¶ä»–
+3.1é™é¢‘ï¼Ÿ
+ä¸éœ€è¦,è‡ªåŠ¨è°ƒé¢‘
+
+4.  ç§»åŠ¨å¤šåª’ä½“ç±»çš„æ–‡ä»¶å¤¹åˆ°ç¬¬äºŒä¸ªç¡¬ç›˜
 lidj$ sudo mv Movies/ /Volumes/SecMedia/
 lidj$ ln -s /Volumes/SecMedia/Movies/ Movies
 
