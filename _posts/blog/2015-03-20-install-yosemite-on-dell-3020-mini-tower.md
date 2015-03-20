@@ -55,11 +55,10 @@ $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk3s1
 三个分区时，直接安装选择200M的FAT分区。
 0.3.2安装为EFI模式
 
-
-
-
-
-
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.3.2_0.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.3.2_1.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.3.2_2.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.3.2_3.png)
 
 
 0.3.3 clover 配置
@@ -95,6 +94,8 @@ EFI+GPT
 $ diskutil list
 $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk0s1
 
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/1.4_0.png)
+
 Boot: -v kext-dev-mode=1 
 Devices:USB Inject=yes FixOwnership=yes（?）
 拷入FakeSMC.kext 
@@ -112,14 +113,13 @@ RealtekRTL8111.kext到kexts/10.10
 2.4 加载驱动，需要clover设置
 System Parameters:Inject Kexts=yes ，No Caches=yes
 
-
-
-
-
-
-
-
-
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_0.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_1.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_2.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_3.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_4.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_5.png)
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_6.png)
 
 3.其他
 3.1降频？
@@ -129,3 +129,4 @@ System Parameters:Inject Kexts=yes ，No Caches=yes
 lidj$ sudo mv Movies/ /Volumes/SecMedia/
 lidj$ ln -s /Volumes/SecMedia/Movies/ Movies
 
+![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/4_0.png)
