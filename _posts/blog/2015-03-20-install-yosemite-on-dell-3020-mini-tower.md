@@ -38,10 +38,10 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口)，全盘安装不存在�
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_1.png)  
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_2.png)  
   
-0.2 写入10.10.app，  
-sudo 10.10.app/Contents/Resources/createinstallmedia --volume U盘位置 --applicationpath 10.10.app --no interaction  
+0.2 写入10.10.app  
+    sudo 10.10.app/Contents/Resources/createinstallmedia --volume U盘位置 --applicationpath 10.10.app --no interaction  
 例如：  
-sudo /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/OSU/ --applicationpath /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app --no interaction  
+    sudo /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/OSU/ --applicationpath /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app --no interaction  
   
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.2_0.png)  
   
