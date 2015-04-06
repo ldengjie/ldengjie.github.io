@@ -6,7 +6,7 @@ category: blog
 
 ---
 
-下文显示不正常，详情参见 https://github.com/ldengjie/ldengjie.github.io/blob/master/_posts/blog/2015-03-20-install-yosemite-on-dell-3020-mini-tower.md
+下文tu显示不正常，详情参见 https://github.com/ldengjie/ldengjie.github.io/blob/master/_posts/blog/2015-03-20-install-yosemite-on-dell-3020-mini-tower.md
 
 ###硬件信息：台式机  
 
