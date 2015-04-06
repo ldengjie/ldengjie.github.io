@@ -1,24 +1,36 @@
----  
+---
 layout: post  
 title: 安装黑苹果到DELL 3020 MT 台式机  
 description: EFI+GPT+CLOVER+Yosemite原版  
 category: blog   
----  
+---
   
 硬件信息：台式机  
+
 电脑型号    戴尔 OptiPlex 3020 Mini Tower  
+
 操作系统    Windows XP 专业版 32位 SP3 ( DirectX 9.0c )  
+
 处理器  英特尔 Core i5-4570 @ 3.20GHz 四核  
+
 主板    戴尔 040DDP (英特尔 Haswell)  
+
 内存    4 GB ( 海力士 DDR3 1600MHz )  
+
 主硬盘  希捷 ST500DM002-1BD142 ( 500 GB / 7200 转/分 )  
+    
 显卡    ATI Radeon HD 8490   
+
 显示器  戴尔 DELF05F DELL E2215HV ( 21.7 英寸 )  
+
 光驱    日立-LG DVD+-RW GHB0N DVD刻录机  
+
 声卡    瑞昱 ALC280 @ 英特尔 Haswell 高保真音频  
+
 网卡    瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 戴尔  
   
 安装方法：  
+
 efi+gpt+clover+10.10.2原版  
   
 安装过程：  
