@@ -13,7 +13,8 @@ category: blog
 2. 全英文，文件编码可以为：cp936,utf-8
 3. 含有中文时,文件编码一定是：utf-8.
 
-vim下改变编码：
+vim下改变编码：  
+
     :set fileencoding=utf-8
 
 4. 插入图片时，图片不能放入_post/下，否则导致整站的.md不能编译通过  
