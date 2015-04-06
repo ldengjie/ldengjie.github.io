@@ -4,7 +4,8 @@ title: 安装黑苹果到DELL 3020 MT 台式机
 description: EFI+GPT+CLOVER+Yosemite原版  
 category: blog   
 ---
-  
+213
+<!---
 硬件信息：台式机  
 
 电脑型号    戴尔 OptiPlex 3020 Mini Tower  
@@ -29,7 +30,6 @@ category: blog
 
 网卡    瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 戴尔  
 
-<!---
 安装方法：  
 
 efi+gpt+clover+10.10.2原版  
