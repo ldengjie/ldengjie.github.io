@@ -35,9 +35,9 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 0.1.1分一个分区(其实生成两个分区,第一个为EFI分区,第二个为这里设置的分区)：格式Mac OS Extended(Journaled)  
 0.1.2分三个分区,1:FAT32 200M 2:Mac OS Extended(Journaled) 7GB 3:exFat 余下的空间  
 
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_0.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_1.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_2.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_1.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_2.png" width = "400" alt="" align=center />  
 <img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_2.png" width = "400" alt="" align=center />  
   
 #####0.2 写入10.10.app  
@@ -48,7 +48,7 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 
     sudo /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/OSU/ --applicationpath /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app --no interaction  
   
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.2_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.2_0.png" width = "400" alt="" align=center />  
   
   
 #####0.3 clover 安装到U盘(选择U盘,其实是安装到U盘的EFI分区)  
@@ -62,10 +62,10 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 三个分区时,直接安装选择200M的FAT分区。  
 0.3.2安装为EFI模式  
   
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_0.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_1.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_2.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_3.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_1.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_2.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.3.2_3.png" width = "400" alt="" align=center />  
   
   
 0.3.3 clover 配置  
@@ -102,7 +102,7 @@ EFI+GPT
     $ diskutil list  
     $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk0s1  
 
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/1.4_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/1.4_0.png" width = "400" alt="" align=center />  
   
 Boot: -v kext-dev-mode=1   
 Devices:USB Inject=yes FixOwnership=yes(?)  
@@ -121,13 +121,13 @@ RealtekRTL8111.kext到kexts/10.10
 #####2.4 加载驱动,需要clover设置  
 System Parameters:Inject Kexts=yes ,No Caches=yes  
   
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_0.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_1.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_2.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_3.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_4.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_5.png" width = "400" alt="" align=center />  
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_6.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_1.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_2.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_3.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_4.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_5.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/2.4_6.png" width = "400" alt="" align=center />  
   
 ####3 其他  
 #####3.1 降频？  
@@ -138,5 +138,5 @@ System Parameters:Inject Kexts=yes ,No Caches=yes
     lidj$ sudo mv Movies/ /Volumes/SecMedia/  
     lidj$ ln -s /Volumes/SecMedia/Movies/ Movies  
 
-<img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/4_0.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/4_0.png" width = "400" alt="" align=center />  
 
