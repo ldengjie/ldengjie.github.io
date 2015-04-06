@@ -1,12 +1,10 @@
-#auto: true
+auto: true
 
 markdown: redcarpet
-#pygments: true
-#paginate: 8
-#permalink: /:title
+pygments: true
+paginate: 8
+permalink: /:title
 
-title: Darry's pages
-#url: 
-#feed: 
-#author_info: <a href=""></a>
+title: Darry pages
+
 encoding: UTF-8
