@@ -28,7 +28,8 @@ category: blog
 声卡    瑞昱 ALC280 @ 英特尔 Haswell 高保真音频  
 
 网卡    瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 戴尔  
-  
+
+<!---
 安装方法：  
 
 efi+gpt+clover+10.10.2原版  
@@ -142,3 +143,4 @@ lidj$ sudo mv Movies/ /Volumes/SecMedia/
 lidj$ ln -s /Volumes/SecMedia/Movies/ Movies  
   
 ![](2015-03-20-install-yosemite-on-dell-3020-mini-tower/4_0.png)  
+-->
