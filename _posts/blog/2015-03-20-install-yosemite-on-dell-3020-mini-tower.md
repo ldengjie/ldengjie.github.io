@@ -3,10 +3,7 @@ layout: post
 title: 安装黑苹果到DELL 3020 MT 台式机  
 description: EFI+GPT+CLOVER+Yosemite原版  
 category: blog  
-
 ---
-
-下文tu显示不正常，详情参见 https://github.com/ldengjie/ldengjie.github.io/blob/master/_posts/blog/https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure.md
 
 ###硬件信息：台式机  
 
