@@ -1,7 +1,7 @@
 auto: true
 
-#markdown: rdiscount
-markdown: kramdown
+markdown: rdiscount
+#markdown: kramdown
 pygments: true
 paginate: 8
 permalink: /:title
