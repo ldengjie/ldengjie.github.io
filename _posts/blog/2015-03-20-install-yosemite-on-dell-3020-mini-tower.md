@@ -38,8 +38,6 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 0.1.1分一个分区(其实生成两个分区,第一个为EFI分区,第二个为这里设置的分区)：格式Mac OS Extended(Journaled)  
 0.1.2分三个分区,1:FAT32 200M 2:Mac OS Extended(Journaled) 7GB 3:exFat 余下的空间  
 
-
-
 <img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_0.png" width = "400" alt="" align=center />
 <img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_1.png" width = "400" alt="" align=center />  
 <img src="https://raw.githubusercontent.com/ldengjie/ldengjie.github.io/master/file/2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_2.png" width = "400" alt="" align=center />  
