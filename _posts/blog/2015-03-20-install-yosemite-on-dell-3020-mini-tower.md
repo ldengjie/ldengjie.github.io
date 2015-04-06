@@ -2,12 +2,11 @@
 layout: post  
 title: 安装黑苹果到DELL 3020 MT 台式机  
 description: EFI+GPT+CLOVER+Yosemite原版  
-category: blog   
+category: blog  
+
 ---
-2213
 
-
-硬件信息：台式机  
+###硬件信息：台式机  
 
 电脑型号    戴尔 OptiPlex 3020 Mini Tower  
 
@@ -32,11 +31,11 @@ category: blog
 网卡    瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 戴尔  
 
 
-安装方法：  
+###安装方法：  
 
 efi+gpt+clover+10.10.2原版  
   
-安装过程：  
+###安装过程：  
   
 SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双系统  
   
@@ -44,7 +43,7 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
   
 驱动核显HD4600(VGA+DP),不能用VGA接口,只能用DP转VGA。  
   
-0 制作U盘引导盘+安装盘(OS X下制作)  
+####0 制作U盘引导盘+安装盘(OS X下制作)  
 0.1 分区,大于2G时,  
 0.1.1分一个分区(其实生成两个分区,第一个为EFI分区,第二个为这里设置的分区)：格式Mac OS Extended(Journaled)  
 0.1.2分三个分区,1:FAT32 200M 2:Mac OS Extended(Journaled) 7GB 3:exFat 余下的空间  
@@ -55,8 +54,11 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_2.png" width = "400" alt="" align=center />  
   
 0.2 写入10.10.app  
+
     sudo 10.10.app/Contents/Resources/createinstallmedia --volume U盘位置 --applicationpath 10.10.app --no interaction  
+
 例如：  
+
     sudo /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/OSU/ --applicationpath /Volumes/UPan/OS/Install\ OS\ X\ Yosemite.app --no interaction  
   
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.2_0.png" width = "400" alt="" align=center />  
@@ -66,8 +68,10 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 下载 http://sourceforge.net/projects/cloverefiboot/  
 0.3.1分一个分区时：  
 格式化EFI 为FAT32F分区 ,否则clover configer 看不到  
-$ diskutil list  
-$ sudo newfs_msdos -v EFI -F 32 /dev/rdisk3s1  
+
+    $ diskutil list  
+    $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk3s1  
+
 三个分区时,直接安装选择200M的FAT分区。  
 0.3.2安装为EFI模式  
   
@@ -90,8 +94,8 @@ Devices:USB Inject=yes FixOwnership=yes //否则五国 waitting on <dict ID="0">
   
 参见http://www.tonymacx86.com/yosemite-desktop-guides/144426-how-install-os-x-yosemite-using-clover.html  
   
-1 安装系统  
-1.0 转化硬盘从MBR到GPT(新买的INTEL SSD 没有转化,但成功了,可能默认为GPT).  
+####1. 安装系统  
+转化硬盘从MBR到GPT(新买的INTEL SSD 没有转化,但成功了,可能默认为GPT).  
   
 1.1 安装时BIOS设置  
 硬盘AHCI模式,不需要关闭USB3.0  
@@ -107,16 +111,17 @@ EFI+GPT
   
 1.4 安装clover到硬盘EFI分区,设置启动为EFI+GPT  
 转化EFI分区为FAT32格式,以便以后安装MAC+WINDOWS双系统,  
-$ diskutil list  
-$ sudo newfs_msdos -v EFI -F 32 /dev/rdisk0s1  
-  
+
+    $ diskutil list  
+    $ sudo newfs_msdos -v EFI -F 32 /dev/rdisk0s1  
+
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/1.4_0.png" width = "400" alt="" align=center />  
   
 Boot: -v kext-dev-mode=1   
 Devices:USB Inject=yes FixOwnership=yes(?)  
 拷入FakeSMC.kext   
   
-2 安装驱动  
+####2 安装驱动  
 2.1 显卡  
 Graphics:Inject Intel=yes,ig-platform-id=0x0d220003//(驱动HD4600)  
 Ingect EDID =yes,Custom EDID=....//(识别显示器)  
@@ -137,13 +142,14 @@ System Parameters:Inject Kexts=yes ,No Caches=yes
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_5.png" width = "400" alt="" align=center />  
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/2.4_6.png" width = "400" alt="" align=center />  
   
-3 其他  
+####3 其他  
 3.1 降频？  
 不需要,自动调频  
   
-4  移动多媒体类的文件夹到第二个硬盘  
-lidj$ sudo mv Movies/ /Volumes/SecMedia/  
-lidj$ ln -s /Volumes/SecMedia/Movies/ Movies  
-  
+####4  移动多媒体类的文件夹到第二个硬盘  
+
+    lidj$ sudo mv Movies/ /Volumes/SecMedia/  
+    lidj$ ln -s /Volumes/SecMedia/Movies/ Movies  
+
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/4_0.png" width = "400" alt="" align=center />  
 
