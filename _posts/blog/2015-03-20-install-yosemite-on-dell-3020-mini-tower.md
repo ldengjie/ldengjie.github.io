@@ -147,4 +147,3 @@ lidj$ ln -s /Volumes/SecMedia/Movies/ Movies
   
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/4_0.png" width = "400" alt="" align=center />  
 
--->
