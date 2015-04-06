@@ -45,7 +45,7 @@ SSD固态硬盘(在SATA0口)+机械硬盘(在SATA1口),全盘安装不存在双�
 
 <img src="../../file/0.1.2_0.png" width = "400" alt="" align=center />
 
-<img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_1.png" width = "400" alt="" align=center />  
+<img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower-figure/0.1.2_1.png" width = "400" alt="" align=center />  
 <img src="2015-03-20-install-yosemite-on-dell-3020-mini-tower/0.1.2_2.png" width = "400" alt="" align=center />  
   
 #####0.2 写入10.10.app  
