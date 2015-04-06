@@ -6,6 +6,8 @@ category: blog
 
 ---
 
+参见 https://github.com/ldengjie/ldengjie.github.io/blob/master/_posts/blog/2015-03-20-install-yosemite-on-dell-3020-mini-tower.md
+
 ###硬件信息：台式机  
 
 电脑型号    戴尔 OptiPlex 3020 Mini Tower  
