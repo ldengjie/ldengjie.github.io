@@ -1,9 +1,9 @@
-auto: true
+#auto: true
 
 markdown: redcarpet
-pygments: true
-paginate: 8
-permalink: /:title
+#pygments: true
+#paginate: 8
+#permalink: /:title
 
 title: Darry's pages
 #url: 
