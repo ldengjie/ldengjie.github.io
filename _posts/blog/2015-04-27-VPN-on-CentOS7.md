@@ -5,13 +5,13 @@ description: PPTP,L2TP VPN依赖GRE协议,需要路由器支持,openvpn不受此
 category: blog 
 ---
 
-#缘由#
+#一 缘由#
 
 所里网络有流量限制,一个月3G,但所里的服务器可无限流量访问外网,同时个人的电脑访问所服务器属于内网流量,不包含在3G/month内,故可以通过服务器做代理链接外网,普通用户在服务器上只有SSH账户,可以用SSH 隧道(SSH -D 5555 xxx@xxxx)做SOCKS代理,配合proxifier或ProxyCap可配置成全局代理,虽然SOCKS5支持UDP,但SSH不支持UDP,所以这种代理只可以转发TCP数据包,对于浏览网页足以,但大部分游戏和QQ都使用UDP协议,对于偶尔玩局DOTA2的我来说还是不完美.
 
 最近所里计算中心推出云虚拟机服务(VPS),有Scientific Linux 7(和RedHat/CentOS同一体系) 和win7镜像可选择,拥有ROOT权限和外网IP,这样就可以在VPS上安装VPN代理,让内网机器链接VPN服务器上外网,这时这个VPN服务器起到了网关路由器作用.路由器岂是相当就能当？这就是VPN的伟大之处,虚拟局域网的作用.
 
-#先看完成效果#
+#二 先看完成效果#
 
 ####流量全走VPN,计流量系统中查询不到.####
 
@@ -28,7 +28,7 @@ category: blog
 
 ipv6网站可正常访问,虽然无做其他设置.
 
-#安装#
+#三 安装#
 
 详情参见[Centos7(Linux)版OpenVPN安装 配置教程](http://blog.csdn.net/mimi00x/article/details/40383285)，以下仅为备忘步骤.
 
@@ -197,7 +197,7 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 
 -------------------
-#其他参考资料#
+#四 参考资料#
 
 2. [使用Proxifier 把ssh shadowsocks代理转为全局代理](http://boafanx.tabboa.com/77.boafanx)
 1. tcpdump:截获网络数据包 [Linux tcpdump命令详解](http://www.cnblogs.com/ggjucheng/archive/2012/01/14/2322659.html)
@@ -210,7 +210,7 @@ ipv6网站可正常访问,虽然无做其他设置.
 7. [PF: Getting Started](http://www.openbsd.org/faq/pf/config.html)
 
 -------------------
-##怎么申请所里虚拟主机(VPS)##
+#五 怎么申请所里虚拟主机(VPS)#
 
 ####1 用邮箱账户和密码[登陆](https://login.ihep.ac.cn/login)####
 
@@ -242,9 +242,10 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 <img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "600" alt="" align=center />  
 
--------------------
+------------------- 
+#六 BACKUP#
 
-##我为什么选择OpenVPN##
+##我为什么选择OpenVPN,而不是PPTP VPN / L2TP VPN##
 
 一开始奔着简单去,安装了PPTP,安装方法参见[CentOS 6.3配置PPTP VPN的方法](http://www.heminjie.com/system/linux/307.html),不同体系的系统在"配置iptables转发"会不一样,cenos redhat sl体系如文中所述.
 
@@ -339,7 +340,7 @@ PPTP L2TP OpenVPN 三种的区别参见:[VPN协议PPTP L2TP OpenVPN](http://www.
 
 摘录如下,以备原文不在:
 
-> ###一 PPTP L2TP OpenVPN三种隧道协议的概念###
+> ###(1) PPTP L2TP OpenVPN三种隧道协议的概念###
 > 
 > ####1 PPTP(Point to Point Tunneling Protocol,点对点隧道协议)默认端口号:1723####
 > 
@@ -387,7 +388,7 @@ PPTP L2TP OpenVPN 三种的区别参见:[VPN协议PPTP L2TP OpenVPN](http://www.
 > 
 >  
 > 
-> ###二 PPTP L2TP OpenVPN三种隧道协议的优缺点对比###
+> ###(II) PPTP L2TP OpenVPN三种隧道协议的优缺点对比###
 > 
 > 易用性:    PPTP > L2TP > OpenVPN
 
@@ -401,7 +402,7 @@ PPTP L2TP OpenVPN 三种的区别参见:[VPN协议PPTP L2TP OpenVPN](http://www.
 > 
 >  
 > 
-> ###三 VPN协议的选择###
+> ###(III) VPN协议的选择###
 > 
 > 电脑上优先使用PPTP,无法使用可以尝试L2TP,对安全性要求高的优先使用OpenVPN.手持设备推荐使用L2TP.
 > 
