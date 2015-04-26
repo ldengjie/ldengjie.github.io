@@ -193,7 +193,7 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 1.[下载OpenVPN](http://openvpn.ustc.edu.cn/)
 
-2.安装时 系统<=win7,可正常安装,win8安装TAP驱动出现错误,自行搜索.
+2.安装时 系统<=win7,可正常安装,win8安装TAP驱动出现错误,自行搜索解决方案.
 
 3.把文件复制到C:\program files\openvpn\config,也可能是C:\Program Files (x86)\OpenVPN\config
 
