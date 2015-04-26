@@ -221,15 +221,15 @@ ipv6网站可正常访问,无做其他设置.
 ###4 按下面顺序操作###
 
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step1.png" width = "700" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step1.png" width = "600" alt="" align=center />  
 
 配置 as your like,
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step2.png" width = "700" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step2.png" width = "600" alt="" align=center />  
 
 得到
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step3.png" width = "700" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step3.png" width = "600" alt="" align=center />  
 
 ###5 ssh登陆VPS,密码默认为 `vm;654321`###
 
@@ -237,7 +237,7 @@ ipv6网站可正常访问,无做其他设置.
 
 ###6 Do something you like.###
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "700" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "600" alt="" align=center />  
 
 -------------------
 
