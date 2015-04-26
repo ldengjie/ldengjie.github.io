@@ -116,7 +116,7 @@ ipv6网站可正常访问,虽然无做其他设置.
     # vi ~/openvpn-2.3.4/sample/sample-config-files/client.conf
     //修改下面选项
     proto tcp            //必须与服务器端的保持一致
-    remote sip 1194      //指定连接的远程服务器的实际IP地址和端口号
+    remote sip 51194      //指定连接的远程服务器的实际IP地址和端口号
     cert client1.crt     //指定当前客户端的证书文件路径,修改为上面生成的客户端crt名字
     key client1.key      //指定当前客户端的私钥文件路径 ,修改为上面生成的客户端key名字
 
