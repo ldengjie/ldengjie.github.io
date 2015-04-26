@@ -38,6 +38,8 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 > "//"为注释
 
+> 下文中 sip为服务器端IP,clip为客户端IP.
+
 ##1.安装OpenVPN##
 
 
@@ -157,7 +159,7 @@ ipv6网站可正常访问,虽然无做其他设置.
 
     //3.设置转发
     # iptables -F
-    # iptables -t nat -A POSTROUTING -s 192.168.2.0/24   -j SNAT --to-source 192.168.2.119
+    # iptables -t nat -A POSTROUTING -s 10.88.0.0/24   -j SNAT --to-source sip
     # service iptables save
     # systemctl restart iptables
 
@@ -249,7 +251,6 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 一开始奔着简单去,安装了PPTP,安装方法参见[CentOS 6.3配置PPTP VPN的方法](http://www.heminjie.com/system/linux/307.html),不同体系的系统在"配置iptables转发"会不一样,cenos redhat sl体系如文中所述.
 
-下文中 sip为服务器端IP,clip为客户端IP.
 
 无奈链接不上,用nmap扫描端口,端口正常
 
