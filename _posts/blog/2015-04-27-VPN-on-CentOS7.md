@@ -332,7 +332,7 @@ ipv6网站可正常访问,虽然无做其他设置.
     //tcp 4次握手关闭链接 
     ...
 
-TCP GRE 协议部分参见[TCP协议中的三次握手和四次挥手(图解)](http://blog.csdn.net/whuslei/article/details/6667471) [PPTP - GRE](http://blog.csdn.net/msptop/article/details/2451138) [PPTP/L2TP协议讲述以及应用部署](http://blog.163.com/hlz_2599/blog/static/142378474201341511122929/),对比服务器和客户端没有接收到对方的GRE数据包,此时两者都已关闭了防火墙,故可推断在两者之间的某个路由上有防火墙过滤了GRE协议,或它老旧不支持.这样一来PPTP和L2TP都不可采取.
+TCP GRE 协议部分参见[TCP协议中的三次握手和四次挥手(图解)](http://blog.csdn.net/whuslei/article/details/6667471) [PPTP - GRE](http://blog.csdn.net/msptop/article/details/2451138) [PPTP/L2TP协议讲述以及应用部署](http://blog.163.com/hlz_2599/blog/static/142378474201341511122929/),对比发现:服务器和客户端彼此没有接收到对方的GRE数据包,此时两者都已关闭了防火墙,故可推断在两者之间的某个路由上有防火墙过滤了GRE协议,或它老旧不支持.这样一来PPTP和L2TP都不可采取.
 
 不得不采用OpenVPN.
 
