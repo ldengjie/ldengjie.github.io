@@ -11,6 +11,22 @@ category: blog
 
 最近所里计算中心推出云虚拟机服务(VPS),有Scientific Linux 7(和RedHat/CentOS同一体系) 和win7镜像可选择,拥有ROOT权限和外网IP,这样就可以在VPS上安装VPN代理,让内网机器链接VPN服务器上外网,这时这个VPN服务器起到了网关路由器作用.路由器岂是相当就能当？这就是VPN的伟大之处,虚拟局域网的作用.
 
+#先看完成效果#
+
+流量全走VPN,计流量系统中查询不到.tcpdump参看客户端数据包详情,除了客户端IP(clip)和服务器端IP(sip)之间的数据包,其他仅为非常少的IPv6广播包:
+
+    $ sudo tcpdump host clip and ! sip
+    05:21:28.086197 ARP, Request who-has 10.10.0.1 tell 10.10.5.251, length 28 
+    05:21:28.092687 ARP, Reply 10.10.0.1 is-at 00:1b:21:b2:66:c9 (oui DCBX), length 28
+
+链接稳定:
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/tunnelblick.png"  alt="" align=center />  
+
+意外效果:
+
+ipv6网站可正常访问,无做其他设置.
+
 #安装#
 
 详情参见[Centos7(Linux)版OpenVPN安装 配置教程](http://blog.csdn.net/mimi00x/article/details/40383285)，以下仅为备忘步骤.
@@ -178,21 +194,6 @@ category: blog
 
 4.管理员权限启动openvpn-gui.exe
 
-#效果#
-
-流量全走VPN,计流量系统中查询不到.tcpdump参看客户端数据包详情,除了客户端IP(clip)和服务器端IP(sip)之间的数据包,其他仅为非常少的IPv6广播包
-
-    $ sudo tcpdump host clip and ! sip
-    05:21:28.086197 ARP, Request who-has 10.10.0.1 tell 10.10.5.251, length 28 
-    05:21:28.092687 ARP, Reply 10.10.0.1 is-at 00:1b:21:b2:66:c9 (oui DCBX), length 28
-
-链接稳定
-
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/tunnelblick.png"  alt="" align=center />  
-
-意外效果:
-
-ipv6网站可正常访问,无做其他设置.
 
 -------------------
 #其他参考资料#
