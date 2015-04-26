@@ -7,7 +7,7 @@ category: blog
 
 #一 缘由#
 
-所里网络有流量限制,一个月3G,但所里的服务器可无限流量访问外网,同时个人的电脑访问所服务器属于内网流量,不包含在3G/month内,故可以通过服务器做代理链接外网,普通用户在服务器上只有SSH账户,可以用SSH 隧道(SSH -D 5555 xxx@xxxx)做SOCKS代理,配合proxifier或ProxyCap可配置成全局代理,虽然SOCKS5支持UDP,但SSH不支持UDP,所以这种代理只可以转发TCP数据包,对于浏览网页足以,但大部分游戏和QQ都使用UDP协议,对于偶尔玩局DOTA2的我来说还是不完美.
+所里网络有流量限制,一个月3G,但所里的服务器可无限流量访问外网,同时个人的电脑访问所服务器属于内网流量,不包含在3G/month内,故可以通过服务器做代理链接外网.普通用户在服务器上只有SSH账户,可以用SSH 隧道(SSH -D 5555 xxx@xxxx)做SOCKS代理,[详情参见](http://www.cnblogs.com/david-zhang-index/archive/2012/08/18/2645943.html),配合proxifier或ProxyCap可配置成全局代理,[详情参见](http://boafanx.tabboa.com/77.boafanx).虽然SOCKS5支持UDP,但SSH不支持UDP,所以这种代理只可以转发TCP数据包,对于浏览网页足以,但大部分游戏和QQ都使用UDP协议,对于偶尔玩局DOTA2的我来说还是不完美.
 
 最近所里计算中心推出云虚拟机服务(VPS),有Scientific Linux 7(和RedHat/CentOS同一体系) 和win7镜像可选择,拥有ROOT权限和外网IP,这样就可以在VPS上安装VPN代理,让内网机器链接VPN服务器上外网,这时这个VPN服务器起到了网关路由器作用.路由器岂是相当就能当？这就是VPN的伟大之处,虚拟局域网的作用.
 
