@@ -94,7 +94,7 @@ category: blog
     push "dhcp-option DNS 202.38.128.10"
 
     //客户端配置文件client.conf
-    vi ~/openvpn-2.3.4/sample/sample-config-files/client.conf
+    # vi ~/openvpn-2.3.4/sample/sample-config-files/client.conf
     //修改下面选项
     proto tcp            //必须与服务器端的保持一致
     remote sip 1194      //指定连接的远程服务器的实际IP地址和端口号
@@ -118,7 +118,7 @@ category: blog
 ##5.启动OpenVPN##
 
     //在Linux中,我们可以直接执行以下命令来启动OpenVPN,如果你是服务器端,就指定server.conf文件的路径,如果你是客户端就指定client.conf文件的路径.由于我们在配置文件中设置的文件路径都是相对config目录的路径,因此我们也只能在config目录下才能正常启动OpenVPN.如果你想在任何地方都能使用上述命令启动OpenVPN,建议你将配置文件与文件路径相关的部分全部改为绝对路径.
-    # openvpn 配置文件路径
+    # nohup openvpn 配置文件路径 //nohup保证断开ssh后仍旧能保持进程的运行
 
 ##6.配置防火墙iptables NAT,配置路由器数据转发功能##
 
@@ -166,7 +166,7 @@ category: blog
 
 4 复制文件到config
 
-5 运行:openvpn client.conf 
+5 运行:openvpn client.conf & //&转后台运行. 
 
 ###windows###
 
@@ -206,6 +206,38 @@ ipv6网站可正常访问,无做其他设置.
 5. [iptables实现路由转发的例子](http://www.jbxue.com/LINUXjishu/3269.html)
 6. PF:MAC OS X 防火墙 [PF APPLE官方资料](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/pf.conf.5.html)
 7. [PF: Getting Started](http://www.openbsd.org/faq/pf/config.html)
+
+-------------------
+##怎么申请所里虚拟主机(VPS)##
+
+1. 用邮箱账户和密码[登陆](https://login.ihep.ac.cn/login)
+
+2. click it 
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/ihepCloud.png"  alt="" align=center />  
+
+3. 姓名全拼+邮箱密码登入
+
+4. 按下面顺序操作
+
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step1.png" width = "400" alt="" align=center />  
+
+配置 as your like,
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step2.png" width = "400" alt="" align=center />  
+
+得到
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step3.png" width = "400" alt="" align=center />  
+
+5. ssh登陆VPS,密码默认为 `vm;654321`
+
+    # ssh root@192.168.83.64
+
+6. Do something you like.
+
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "400" alt="" align=center />  
 
 -------------------
 
