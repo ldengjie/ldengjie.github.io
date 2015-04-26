@@ -210,34 +210,34 @@ ipv6网站可正常访问,无做其他设置.
 -------------------
 ##怎么申请所里虚拟主机(VPS)##
 
-1. 用邮箱账户和密码[登陆](https://login.ihep.ac.cn/login)
+###1 用邮箱账户和密码[登陆](https://login.ihep.ac.cn/login)###
 
-2. click it 
+###2 click it ###
 
 <img src="../../file/2015-04-27-VPN-on-CentOS7-figure/ihepCloud.png"  alt="" align=center />  
 
-3. 姓名全拼+邮箱密码登入
+###3 姓名全拼+邮箱密码登入###
 
-4. 按下面顺序操作
+###4 按下面顺序操作###
 
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step1.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step1.png" width = "700" alt="" align=center />  
 
 配置 as your like,
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step2.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step2.png" width = "700" alt="" align=center />  
 
 得到
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step3.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step3.png" width = "700" alt="" align=center />  
 
-5. ssh登陆VPS,密码默认为 `vm;654321`
+###5 ssh登陆VPS,密码默认为 `vm;654321`###
 
     # ssh root@192.168.83.64
 
-6. Do something you like.
+###6 Do something you like.###
 
-<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "400" alt="" align=center />  
+<img src="../../file/2015-04-27-VPN-on-CentOS7-figure/step4.png" width = "700" alt="" align=center />  
 
 -------------------
 
