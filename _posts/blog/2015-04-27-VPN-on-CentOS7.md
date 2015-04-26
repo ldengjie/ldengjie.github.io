@@ -17,7 +17,7 @@ category: blog
 
     //tcpdump参看客户端数据包详情,除了客户端IP(clip)和服务器端IP(sip)之间的数据包,其他仅为广播包:
     $ sudo tcpdump host clip and ! sip
-    05:21:28.086197 ARP, Request who-has 10.10.0.1 tell 10.10.5.251, length 28 
+    05:21:28.086197 ARP, Request who-has 10.10.0.1 tell clip, length 28 
     05:21:28.092687 ARP, Reply 10.10.0.1 is-at 00:1b:21:b2:66:c9 (oui DCBX), length 28
 
 ####链接稳定:####
@@ -273,40 +273,40 @@ ipv6网站可正常访问,虽然无做其他设置.
     $ sudo tcpdump host clip and sip
 
     //tcp 三次握手建立链接
-    23:19:14.735117 IP 10.10.5.251.60129  > sip.1723: Flags [S], seq 3346976484, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 1172463360 ecr 0,sackOK,eol], length 0
-    23:19:14.742169 IP sip.1723 > 10.10.5.251.60129: Flags [S.], seq 3764887308, ack 3346976485, win 14480, options [mss 1460,sackOK,TS val 91220646 ecr 1172463360,nop,wscale 7], length 0
-    23:19:14.742219 IP 10.10.5.251.60129  > sip.1723: Flags [.], ack 1, win 4117, options [nop,nop,TS val 1172463367 ecr 91220646], length 0
+    23:19:14.735117 IP clip.60129  > sip.1723: Flags [S], seq 3346976484, win 65535, options [mss 1460,nop,wscale 5,nop,nop,TS val 1172463360 ecr 0,sackOK,eol], length 0
+    23:19:14.742169 IP sip.1723 > clip.60129: Flags [S.], seq 3764887308, ack 3346976485, win 14480, options [mss 1460,sackOK,TS val 91220646 ecr 1172463360,nop,wscale 7], length 0
+    23:19:14.742219 IP clip.60129  > sip.1723: Flags [.], ack 1, win 4117, options [nop,nop,TS val 1172463367 ecr 91220646], length 0
     
     //通过1723端口tcp数据包交换控制信息,建立GRE传送通道
-    23:19:14.742251 IP 10.10.5.251.60129  > sip.1723: Flags [P.], seq 1:157, ack 1, win 4117, options [nop,nop,TS val 1172463367 ecr 91220646], length 156: pptp CTRL_MSGTYPE=SCCRQ PROTO_VER(1.0) FRAME_CAP(A) BEARER_CAP(A) MAX_CHAN(0) FIRM_REV(0) HOSTNAME() VENDOR()
-    23:19:14.745603 IP sip.1723 > 10.10.5.251.60129: Flags [.], ack 157, win 122, options [nop,nop,TS val 91220653 ecr 1172463367], length 0
-    23:19:14.762489 IP sip.1723 > 10.10.5.251.60129: Flags [P.], seq 1:157, ack 157, win 122, options [nop,nop,TS val 91220669 ecr 1172463367], length 156: pptp CTRL_MSGTYPE=SCCRP PROTO_VER(1.0) RESULT_CODE(1) ERR_CODE(0) FRAME_CAP() BEARER_CAP() MAX_CHAN(1) FIRM_REV(1) HOSTNAME(local) VENDOR(linux)
-    23:19:14.762535 IP 10.10.5.251.60129  > sip.1723: Flags [.], ack 157, win 4112, options [nop,nop,TS val 1172463386 ecr 91220669], length 0
-    23:19:14.762595 IP 10.10.5.251.60129  > sip.1723: Flags [P.], seq 157:325, ack 157, win 4112, options [nop,nop,TS val 1172463386 ecr 91220669], length 168: pptp CTRL_MSGTYPE=OCRQ CALL_ID(13008) CALL_SER_NUM(0) MIN_BPS(300) MAX_BPS(100000000) BEARER_TYPE(Any) FRAME_TYPE(E) RECV_WIN(64) PROC_DELAY(0) PHONE_NO_LEN(0) PHONE_NO() SUB_ADDR()
-    23:19:14.766699 IP sip.1723 > 10.10.5.251.60129: Flags [P.], seq 157:189, ack 325, win 130, options [nop,nop,TS val 91220673 ecr 1172463386], length 32: pptp CTRL_MSGTYPE=OCRP CALL_ID(0) PEER_CALL_ID(13008) RESULT_CODE(1) ERR_CODE(0) CAUSE_CODE(0) CONN_SPEED(100000000) RECV_WIN(64) PROC_DELAY(0) PHY_CHAN_ID(0)
-    23:19:14.766726 IP 10.10.5.251.60129  > sip.1723: Flags [.], ack 189, win 4111, options [nop,nop,TS val 1172463389 ecr 91220673], length 0
-    23:19:14.766755 IP 10.10.5.251.60129  > sip.1723: Flags [P.], seq 325:349, ack 189, win 4111, options [nop,nop,TS val 1172463389 ecr 91220673], length 24: pptp CTRL_MSGTYPE=SLI PEER_CALL_ID(0) SEND_ACCM(0xffffffff) RECV_ACCM(0xffffffff)
+    23:19:14.742251 IP clip.60129  > sip.1723: Flags [P.], seq 1:157, ack 1, win 4117, options [nop,nop,TS val 1172463367 ecr 91220646], length 156: pptp CTRL_MSGTYPE=SCCRQ PROTO_VER(1.0) FRAME_CAP(A) BEARER_CAP(A) MAX_CHAN(0) FIRM_REV(0) HOSTNAME() VENDOR()
+    23:19:14.745603 IP sip.1723 > clip.60129: Flags [.], ack 157, win 122, options [nop,nop,TS val 91220653 ecr 1172463367], length 0
+    23:19:14.762489 IP sip.1723 > clip.60129: Flags [P.], seq 1:157, ack 157, win 122, options [nop,nop,TS val 91220669 ecr 1172463367], length 156: pptp CTRL_MSGTYPE=SCCRP PROTO_VER(1.0) RESULT_CODE(1) ERR_CODE(0) FRAME_CAP() BEARER_CAP() MAX_CHAN(1) FIRM_REV(1) HOSTNAME(local) VENDOR(linux)
+    23:19:14.762535 IP clip.60129  > sip.1723: Flags [.], ack 157, win 4112, options [nop,nop,TS val 1172463386 ecr 91220669], length 0
+    23:19:14.762595 IP clip.60129  > sip.1723: Flags [P.], seq 157:325, ack 157, win 4112, options [nop,nop,TS val 1172463386 ecr 91220669], length 168: pptp CTRL_MSGTYPE=OCRQ CALL_ID(13008) CALL_SER_NUM(0) MIN_BPS(300) MAX_BPS(100000000) BEARER_TYPE(Any) FRAME_TYPE(E) RECV_WIN(64) PROC_DELAY(0) PHONE_NO_LEN(0) PHONE_NO() SUB_ADDR()
+    23:19:14.766699 IP sip.1723 > clip.60129: Flags [P.], seq 157:189, ack 325, win 130, options [nop,nop,TS val 91220673 ecr 1172463386], length 32: pptp CTRL_MSGTYPE=OCRP CALL_ID(0) PEER_CALL_ID(13008) RESULT_CODE(1) ERR_CODE(0) CAUSE_CODE(0) CONN_SPEED(100000000) RECV_WIN(64) PROC_DELAY(0) PHY_CHAN_ID(0)
+    23:19:14.766726 IP clip.60129  > sip.1723: Flags [.], ack 189, win 4111, options [nop,nop,TS val 1172463389 ecr 91220673], length 0
+    23:19:14.766755 IP clip.60129  > sip.1723: Flags [P.], seq 325:349, ack 189, win 4111, options [nop,nop,TS val 1172463389 ecr 91220673], length 24: pptp CTRL_MSGTYPE=SLI PEER_CALL_ID(0) SEND_ACCM(0xffffffff) RECV_ACCM(0xffffffff)
 
     //通过GRE 47号协议传输数据,不是47号端口.
-    23:19:14.784632 IP 10.10.5.251        > sip: GREv1, call 0, seq 1, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:14.811724 IP sip.1723 > 10.10.5.251.60129: Flags [.], ack 349, win 130, options [nop,nop,TS val 91220716 ecr 1172463389], length 0
-    23:19:17.878070 IP 10.10.5.251        > sip: GREv1, call 0, seq 2, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:20.974037 IP 10.10.5.251        > sip: GREv1, call 0, seq 3, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:24.073192 IP 10.10.5.251        > sip: GREv1, call 0, seq 4, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:27.166156 IP 10.10.5.251        > sip: GREv1, call 0, seq 5, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:30.266323 IP 10.10.5.251        > sip: GREv1, call 0, seq 6, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:33.366152 IP 10.10.5.251        > sip: GREv1, call 0, seq 7, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:34.833645 IP 10.10.5.251.60129  > sip.1723: Flags [.], ack 189, win 4111, length 0
-    23:19:34.837934 IP sip.1723 > 10.10.5.251.60129: Flags [.], ack 349, win 130, options [nop,nop,TS val 91240745 ecr 1172463389], length 0
-    23:19:36.466142 IP 10.10.5.251        > sip: GREv1, call 0, seq 8, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:39.566115 IP 10.10.5.251        > sip: GREv1, call 0, seq 9, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
-    23:19:42.666162 IP 10.10.5.251        > sip: GREv1, call 0, seq 10, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:14.784632 IP clip        > sip: GREv1, call 0, seq 1, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:14.811724 IP sip.1723 > clip.60129: Flags [.], ack 349, win 130, options [nop,nop,TS val 91220716 ecr 1172463389], length 0
+    23:19:17.878070 IP clip        > sip: GREv1, call 0, seq 2, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:20.974037 IP clip        > sip: GREv1, call 0, seq 3, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:24.073192 IP clip        > sip: GREv1, call 0, seq 4, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:27.166156 IP clip        > sip: GREv1, call 0, seq 5, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:30.266323 IP clip        > sip: GREv1, call 0, seq 6, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:33.366152 IP clip        > sip: GREv1, call 0, seq 7, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:34.833645 IP clip.60129  > sip.1723: Flags [.], ack 189, win 4111, length 0
+    23:19:34.837934 IP sip.1723 > clip.60129: Flags [.], ack 349, win 130, options [nop,nop,TS val 91240745 ecr 1172463389], length 0
+    23:19:36.466142 IP clip        > sip: GREv1, call 0, seq 8, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:39.566115 IP clip        > sip: GREv1, call 0, seq 9, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
+    23:19:42.666162 IP clip        > sip: GREv1, call 0, seq 10, ack 0, length 40: LCP, Conf-Request (0x01), id 1, length 22
    
     //tcp 4次握手关闭链接 
-    23:19:45.020055 IP sip.1723 > 10.10.5.251.60129: Flags [F.], seq 189, ack 349, win 130, options [nop,nop,TS val 91250812 ecr 1172463389], length 0
-    23:19:45.020094 IP 10.10.5.251.60129  > sip.1723: Flags [.], ack 190, win 4111, options [nop,nop,TS val 1172493608 ecr 91250812], length 0
-    23:19:45.021416 IP 10.10.5.251.60129  > sip.1723: Flags [F.], seq 349, ack 190, win 4111, options [nop,nop,TS val 1172493609 ecr 91250812], length 0
-    23:19:45.023934 IP sip.1723 > 10.10.5.251.60129: Flags [.], ack 350, win 130, options [nop,nop,TS val 91250930 ecr 1172493609], length 0
+    23:19:45.020055 IP sip.1723 > clip.60129: Flags [F.], seq 189, ack 349, win 130, options [nop,nop,TS val 91250812 ecr 1172463389], length 0
+    23:19:45.020094 IP clip.60129  > sip.1723: Flags [.], ack 190, win 4111, options [nop,nop,TS val 1172493608 ecr 91250812], length 0
+    23:19:45.021416 IP clip.60129  > sip.1723: Flags [F.], seq 349, ack 190, win 4111, options [nop,nop,TS val 1172493609 ecr 91250812], length 0
+    23:19:45.023934 IP sip.1723 > clip.60129: Flags [.], ack 350, win 130, options [nop,nop,TS val 91250930 ecr 1172493609], length 0
     
     //服务器端
     # tcpdump host clip and sip
@@ -315,19 +315,19 @@ ipv6网站可正常访问,虽然无做其他设置.
     //通过1723端口tcp数据包交换控制信息,建立GRE传送通道
     ...
     //通过GRE 47号协议传输数据,不是47号端口.
-    00:36:27.519495 IP sip > 10.10.5.251: GREv1, call 13179, seq 0, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:27.556607 IP sip.pptp > 10.10.5.251.62482: Flags [.], ack 349, win 130, options [nop,nop,TS val 95853443 ecr 1177082162], length 0
-    00:36:30.518295 IP sip > 10.10.5.251: GREv1, call 13179, seq 1, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:33.521385 IP sip > 10.10.5.251: GREv1, call 13179, seq 2, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:36.524472 IP sip > 10.10.5.251: GREv1, call 13179, seq 3, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:39.527595 IP sip > 10.10.5.251: GREv1, call 13179, seq 4, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:42.530681 IP sip > 10.10.5.251: GREv1, call 13179, seq 5, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:45.533800 IP sip > 10.10.5.251: GREv1, call 13179, seq 6, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:47.599935 IP 10.10.5.251.62482 > sip.pptp: Flags [.], ack 189, win 4111, length 0
-    00:36:47.599999 IP sip.pptp > 10.10.5.251.62482: Flags [.], ack 349, win 130, options [nop,nop,TS val 95873486 ecr 1177082162], length 0
-    00:36:48.536954 IP sip > 10.10.5.251: GREv1, call 13179, seq 7, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:51.540067 IP sip > 10.10.5.251: GREv1, call 13179, seq 8, length 41: LCP, Conf-Request (0x01), id 1, length 27
-    00:36:54.543181 IP sip > 10.10.5.251: GREv1, call 13179, seq 9, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:27.519495 IP sip > clip: GREv1, call 13179, seq 0, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:27.556607 IP sip.pptp > clip.62482: Flags [.], ack 349, win 130, options [nop,nop,TS val 95853443 ecr 1177082162], length 0
+    00:36:30.518295 IP sip > clip: GREv1, call 13179, seq 1, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:33.521385 IP sip > clip: GREv1, call 13179, seq 2, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:36.524472 IP sip > clip: GREv1, call 13179, seq 3, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:39.527595 IP sip > clip: GREv1, call 13179, seq 4, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:42.530681 IP sip > clip: GREv1, call 13179, seq 5, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:45.533800 IP sip > clip: GREv1, call 13179, seq 6, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:47.599935 IP clip.62482 > sip.pptp: Flags [.], ack 189, win 4111, length 0
+    00:36:47.599999 IP sip.pptp > clip.62482: Flags [.], ack 349, win 130, options [nop,nop,TS val 95873486 ecr 1177082162], length 0
+    00:36:48.536954 IP sip > clip: GREv1, call 13179, seq 7, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:51.540067 IP sip > clip: GREv1, call 13179, seq 8, length 41: LCP, Conf-Request (0x01), id 1, length 27
+    00:36:54.543181 IP sip > clip: GREv1, call 13179, seq 9, length 41: LCP, Conf-Request (0x01), id 1, length 27
     
     //tcp 4次握手关闭链接 
     ...
