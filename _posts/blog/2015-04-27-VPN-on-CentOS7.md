@@ -13,8 +13,9 @@ category: blog
 
 #先看完成效果#
 
-####流量全走VPN,计流量系统中查询不到.####tcpdump参看客户端数据包详情,除了客户端IP(clip)和服务器端IP(sip)之间的数据包,其他仅为广播包:
+####流量全走VPN,计流量系统中查询不到.####
 
+    //tcpdump参看客户端数据包详情,除了客户端IP(clip)和服务器端IP(sip)之间的数据包,其他仅为广播包:
     $ sudo tcpdump host clip and ! sip
     05:21:28.086197 ARP, Request who-has 10.10.0.1 tell 10.10.5.251, length 28 
     05:21:28.092687 ARP, Reply 10.10.0.1 is-at 00:1b:21:b2:66:c9 (oui DCBX), length 28
