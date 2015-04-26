@@ -30,7 +30,7 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 #三 安装#
 
-详情参见[Centos7(Linux)版OpenVPN安装 配置教程](http://blog.csdn.net/mimi00x/article/details/40383285)，以下仅为备忘步骤.
+详情可对比[Centos7(Linux)版OpenVPN安装 配置教程](http://blog.csdn.net/mimi00x/article/details/40383285)，以下仅为所里适用的步骤.
 
 > "# "为服务器端root权限命令行
 
