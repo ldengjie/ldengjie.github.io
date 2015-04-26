@@ -185,7 +185,9 @@ ipv6网站可正常访问,虽然无做其他设置.
 
 4 复制文件到config
 
-5 运行:openvpn client.conf & //&转后台运行. 
+5 运行
+
+    $ openvpn client.conf & //&转后台运行. 
 
 ###windows###
 
