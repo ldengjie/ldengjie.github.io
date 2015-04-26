@@ -203,15 +203,14 @@ ipv6网站可正常访问,虽然无做其他设置.
 -------------------
 #四 参考资料#
 
-2. [使用Proxifier 把ssh shadowsocks代理转为全局代理](http://boafanx.tabboa.com/77.boafanx)
 1. tcpdump:截获网络数据包 [Linux tcpdump命令详解](http://www.cnblogs.com/ggjucheng/archive/2012/01/14/2322659.html)
-4. nc:端口数据监控 [linux下nc的使用](http://qing.blog.sina.com.cn/1285469314/4c9eb48233004b2l.html)
-8. nmap:扫描端口 [NMAP 基础教程](http://drops.wooyun.org/tips/2002)
-9. traceroute:跟踪路由 [linux之traceroute用法详解](http://yp.oss.org.cn/software/show_resource.php?resource_id=1057)
-3. iptables:CentOS防火墙 [Iptables工具的使用](http://www.cnblogs.com/linuxer/archive/2012/04/10/2870538.html)
-5. [iptables实现路由转发的例子](http://www.jbxue.com/LINUXjishu/3269.html)
-6. PF:MAC OS X 防火墙 [PF APPLE官方资料](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/pf.conf.5.html)
-7. [PF: Getting Started](http://www.openbsd.org/faq/pf/config.html)
+2. nc:端口数据监控 [linux下nc的使用](http://qing.blog.sina.com.cn/1285469314/4c9eb48233004b2l.html)
+3. nmap:扫描端口 [NMAP 基础教程](http://drops.wooyun.org/tips/2002)
+4. traceroute:跟踪路由 [linux之traceroute用法详解](http://yp.oss.org.cn/software/show_resource.php?resource_id=1057)
+5. iptables:CentOS防火墙 [Iptables工具的使用](http://www.cnblogs.com/linuxer/archive/2012/04/10/2870538.html)
+6. [iptables实现路由转发的例子](http://www.jbxue.com/LINUXjishu/3269.html)
+7. PF:MAC OS X 防火墙 [PF APPLE官方资料](https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man5/pf.conf.5.html)
+8. [PF: Getting Started](http://www.openbsd.org/faq/pf/config.html)
 
 -------------------
 #五 怎么申请所里虚拟主机(VPS)#
