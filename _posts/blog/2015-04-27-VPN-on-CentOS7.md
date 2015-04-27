@@ -104,7 +104,7 @@ ipv6网站可正常访问,虽然无做其他设置.
     # vi ~/openvpn-2.3.4/sample/sample-config-files/server.conf
 
     //修改下面选项
-    port 51194            //指定监听的本机端口号,默认为1194,修改掉以防该端口被封掉
+    port 11194            //指定监听的本机端口号,默认为1194,修改掉以防该端口被封掉
     dh dh2048.pem         //指定迪菲赫尔曼参数的文件路径,默认为dh1024.pem
     server 10.88.0.0 255.255.255.0   //指定虚拟局域网占用的IP地址段和子网掩码,此处配置的服务器自身占用10.88.0.1.
     proto tcp //指定采用的传输协议,可以选择tcp或udp ,默认为UDP,会造成游戏数据丢包,修改为TCP,把UDP数据包放到TCP包里传输,保证高的正确接收
@@ -116,7 +116,7 @@ ipv6网站可正常访问,虽然无做其他设置.
     # vi ~/openvpn-2.3.4/sample/sample-config-files/client.conf
     //修改下面选项
     proto tcp            //必须与服务器端的保持一致
-    remote sip 51194      //指定连接的远程服务器的实际IP地址和端口号
+    remote sip 11194      //指定连接的远程服务器的实际IP地址和端口号
     cert client1.crt     //指定当前客户端的证书文件路径,修改为上面生成的客户端crt名字
     key client1.key      //指定当前客户端的私钥文件路径 ,修改为上面生成的客户端key名字
 
