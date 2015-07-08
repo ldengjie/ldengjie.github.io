@@ -6,3 +6,5 @@ category: blog
 ---
 
 content
+
+set fileencoding=gb18030
